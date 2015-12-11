@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1021" minimumToolsVersion="Xcode 7.0">
+    <entity name="Direction" representedClassName=".Direction" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="route" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Route" inverseName="directions" inverseEntity="Route" syncable="YES"/>
+        <relationship name="stops" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Stop" inverseName="direction" inverseEntity="Stop" syncable="YES"/>
+    </entity>
+    <entity name="Provider" representedClassName=".Provider" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="routes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Route" inverseName="provider" inverseEntity="Route" syncable="YES"/>
+    </entity>
+    <entity name="Route" representedClassName=".Route" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="providerId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="routeNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="directions" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Direction" inverseName="route" inverseEntity="Direction" syncable="YES"/>
+        <relationship name="provider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Provider" inverseName="routes" inverseEntity="Provider" syncable="YES"/>
+    </entity>
+    <entity name="Stop" representedClassName=".Stop" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="direction" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Direction" inverseName="stops" inverseEntity="Direction" syncable="YES"/>
+    </entity>
+    <entity name="VehicleLocation" representedClassName=".VehicleLocation" syncable="YES">
+        <attribute name="bearing" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="blockNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="direction" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="locationTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="odometer" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="route" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="terminal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleLatitude" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="vehicleLongitude" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Direction" positionX="-36" positionY="36" width="128" height="105"/>
+        <element name="Provider" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Route" positionX="-54" positionY="9" width="128" height="120"/>
+        <element name="Stop" positionX="-18" positionY="54" width="128" height="90"/>
+        <element name="VehicleLocation" positionX="-45" positionY="45" width="128" height="195"/>
+    </elements>
+</model>
