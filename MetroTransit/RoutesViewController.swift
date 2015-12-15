@@ -42,7 +42,7 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
-    // MARK: - UITableview datasource
+    // MARK : - UITableView datasource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return routes.count
@@ -55,7 +55,8 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
     
-    // MARK: - UITableview delegate
+    // MARK : - UITableView delegate
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         showScreenPicker()
     }
@@ -63,15 +64,25 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
     // MARK: - Screen
     
     func showScreenPicker() {
-        let controller = UIAlertController(title: "Choose", message: "Choose", preferredStyle: .ActionSheet)
+        let route = routes[tableview.indexPathForSelectedRow!.row]
+        let controller = UIAlertController(title: route.name, message: nil, preferredStyle: .ActionSheet)
+        
         let directionsAction = UIAlertAction(title: "Directions", style: .Default, handler: { (action: UIAlertAction) -> Void in
             self.performSegueWithIdentifier(DirectionsViewController.segue, sender: self)
         })
+        
         let vehiclesAction = UIAlertAction(title: "Vehicles", style: .Default, handler: { (action: UIAlertAction) -> Void in
             self.performSegueWithIdentifier(VehiclesViewController.segue, sender: self)
         })
+        
         controller.addAction(directionsAction)
         controller.addAction(vehiclesAction)
-        self.presentViewController(controller, animated: true, completion: nil)
+        controller.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action: UIAlertAction) -> Void in
+            if let selectedIndexPath = self.tableview.indexPathForSelectedRow {
+                self.tableview.deselectRowAtIndexPath(selectedIndexPath, animated: true)
+            }
+        }))
+        
+        self.presentViewController(controller, animated: true, completion:nil)
     }
 }
