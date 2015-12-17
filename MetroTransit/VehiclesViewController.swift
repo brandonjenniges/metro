@@ -16,14 +16,25 @@ class VehiclesViewController: UIViewController, MKMapViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        getVehicles()
+        showVehicles()
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
     }
     
-    func getVehicles() {
+    func showVehicles() {
+        var annotations = [VehicleAnnotation]()
+        for v in vehicles {
+            let location = CLLocationCoordinate2D(latitude: CLLocationDegrees(v.vehicleLatitude!), longitude:  CLLocationDegrees(v.vehicleLongitude!))
+            let annotation = VehicleAnnotation(title: "test", locationName: "test", discipline: "test", coordinate: location)
+            self.mapView.addAnnotation(annotation)
+            annotations.append(annotation)
+        }
+        self.mapView.showAnnotations(annotations, animated: true)
+    }
+    
+    func refreshVehicleLocations() {
         VehicleLocation.getVehicles(route, success: { (vehicles) -> Void in
             
             self.vehicles = vehicles

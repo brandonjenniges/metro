@@ -11,6 +11,7 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
     
     var routes = [Route]()
     var displayRoutes = [Route]()
+    var vehicles = [VehicleLocation]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,7 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
         } else if segue.identifier == VehiclesViewController.segue {
             let viewController = segue.destinationViewController as! VehiclesViewController
             viewController.route = displayRoutes[tableview.indexPathForSelectedRow!.row]
+            viewController.vehicles = self.vehicles
         }
     }
     
@@ -81,7 +83,16 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
         })
         
         let vehiclesAction = UIAlertAction(title: "Vehicles", style: .Default, handler: { (action: UIAlertAction) -> Void in
-            self.performSegueWithIdentifier(VehiclesViewController.segue, sender: self)
+            VehicleLocation.getVehicles(route, success: { (vehicles) -> Void in
+                self.vehicles = vehicles
+                if (vehicles.count > 0) {
+                    self.performSegueWithIdentifier(VehiclesViewController.segue, sender: self)
+                } else {
+                    self.alertNoVehicles(route)
+                }
+                }) { (routes, error) -> Void in
+                    
+            }
         })
         
         controller.addAction(directionsAction)
@@ -93,5 +104,13 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
         }))
         
         self.presentViewController(controller, animated: true, completion:nil)
+    }
+    
+    func alertNoVehicles(route: Route) {
+        let title = route.name!
+        let message = "There are currently no active vehicles for this route."
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 }
