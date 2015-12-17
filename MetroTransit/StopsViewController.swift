@@ -13,6 +13,7 @@ class StopsViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = direction.name!
         getStops()
     }
     

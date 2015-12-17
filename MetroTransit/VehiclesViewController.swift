@@ -16,6 +16,7 @@ class VehiclesViewController: UIViewController, MKMapViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = route.name!
         showVehicles()
     }
     

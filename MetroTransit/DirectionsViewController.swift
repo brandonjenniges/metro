@@ -14,6 +14,7 @@ class DirectionsViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = route.name!
         getDirections()
     }
     
