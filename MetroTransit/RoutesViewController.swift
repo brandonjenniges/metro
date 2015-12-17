@@ -5,11 +5,12 @@
 import UIKit
 import Alamofire
 
-class RoutesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class RoutesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     @IBOutlet weak var tableview: UITableView!
     
     var routes = [Route]()
+    var displayRoutes = [Route]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,16 +27,17 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == DirectionsViewController.segue {
             let viewController = segue.destinationViewController as! DirectionsViewController
-            viewController.route = routes[tableview.indexPathForSelectedRow!.row]
+            viewController.route = displayRoutes[tableview.indexPathForSelectedRow!.row]
         } else if segue.identifier == VehiclesViewController.segue {
             let viewController = segue.destinationViewController as! VehiclesViewController
-            viewController.route = routes[tableview.indexPathForSelectedRow!.row]
+            viewController.route = displayRoutes[tableview.indexPathForSelectedRow!.row]
         }
     }
     
     func getRoutes() {
         Route.getRoutes(success: { (routes) -> Void in
             self.routes = routes
+            self.displayRoutes = routes
             self.tableview.reloadData()
             }) { (routes, error) -> Void in
                 
@@ -45,11 +47,11 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
     // MARK : - UITableView datasource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return routes.count
+        return displayRoutes.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let route = routes[indexPath.row]
+        let route = displayRoutes[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         cell.textLabel?.text = route.name!
         return cell
@@ -61,10 +63,17 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
         showScreenPicker()
     }
     
-    // MARK: - Screen
+    // MARK : - UISearchBar delegate
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        self.displayRoutes = Route.getRoutesContainingName(searchText, routes: routes)
+        self.tableview.reloadData()
+    }
+    
+    // MARK : - Screen
     
     func showScreenPicker() {
-        let route = routes[tableview.indexPathForSelectedRow!.row]
+        let route = displayRoutes[tableview.indexPathForSelectedRow!.row]
         let controller = UIAlertController(title: route.name, message: nil, preferredStyle: .ActionSheet)
         
         let directionsAction = UIAlertAction(title: "Directions", style: .Default, handler: { (action: UIAlertAction) -> Void in

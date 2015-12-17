@@ -48,4 +48,16 @@ class Route: NSManagedObject {
                 }
         }
     }
+    
+    static func getRoutesContainingName(string: String, routes:[Route]) -> [Route] {
+        let whitespaceSet = NSCharacterSet.whitespaceCharacterSet()
+        if string.stringByTrimmingCharactersInSet(whitespaceSet) == "" {
+            return routes
+        }
+        
+        let lowercaseString = string.lowercaseString
+        return routes.filter { (route : Route) -> Bool in
+            return route.name!.lowercaseString.rangeOfString(lowercaseString) != nil
+        }
+    }
 }
