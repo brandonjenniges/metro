@@ -39,7 +39,7 @@ class VehiclesViewController: UIViewController, MKMapViewDelegate, CLLocationMan
         var annotations = [VehicleAnnotation]()
         for v in vehicles {
             let location = CLLocationCoordinate2D(latitude: CLLocationDegrees(v.vehicleLatitude!), longitude:  CLLocationDegrees(v.vehicleLongitude!))
-            let annotation = VehicleAnnotation(title: "test", locationName: "test", discipline: "test", coordinate: location)
+            let annotation = VehicleAnnotation(direction: Direction.routeDirectionForInt(Int(v.direction!)), coordinate: location)
             self.mapView.addAnnotation(annotation)
             annotations.append(annotation)
         }
@@ -52,7 +52,7 @@ class VehiclesViewController: UIViewController, MKMapViewDelegate, CLLocationMan
             self.vehicles = vehicles
             for v in vehicles {
                 let location = CLLocationCoordinate2D(latitude: CLLocationDegrees(v.vehicleLatitude!), longitude:  CLLocationDegrees(v.vehicleLongitude!))
-                let annotation = VehicleAnnotation(title: "test", locationName: "test", discipline: "test", coordinate: location)
+                let annotation = VehicleAnnotation(direction: Direction.routeDirectionForInt(Int(v.direction!)), coordinate: location)
                 self.mapView.addAnnotation(annotation)
             }
             self.mapView.showAnnotations(self.mapView.annotations, animated: true)
@@ -88,7 +88,7 @@ class VehiclesViewController: UIViewController, MKMapViewDelegate, CLLocationMan
         if let userPin = self.userPin {
             userPin.coordinate = coordinate
         } else {
-            self.userPin = UserAnnotation(title: "Me", coordinate: coordinate)
+            self.userPin = UserAnnotation(title: "You", coordinate: coordinate)
             mapView.addAnnotation(self.userPin!)
             mapView.showAnnotations(mapView.annotations, animated: true)
         }

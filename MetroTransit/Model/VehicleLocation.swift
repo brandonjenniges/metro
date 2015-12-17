@@ -18,7 +18,7 @@ class VehicleLocation: NSManagedObject {
         
         vehicle.vehicleLatitude = attributes["VehicleLatitude"] as? NSNumber
         vehicle.vehicleLongitude = attributes["VehicleLongitude"] as? NSNumber
-        
+        vehicle.direction = attributes["Direction"] as? NSNumber
         vehicle.terminal = attributes["Terminal"] as? String
         return vehicle
     }

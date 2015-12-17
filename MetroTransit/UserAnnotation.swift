@@ -16,6 +16,6 @@ class UserAnnotation: NSObject, MKAnnotation  {
     }
     
     var subtitle: String? {
-        return "Me"
+        return nil
     }
 }

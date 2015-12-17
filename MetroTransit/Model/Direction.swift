@@ -10,6 +10,10 @@ import Alamofire
 
 class Direction: NSManagedObject {
     
+    enum RouteDirection: Int {
+        case South = 1, East = 2, West = 3, North = 4
+    }
+    
     // MARK: - Core Data
     
     static func insertWithAttributes(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> Direction {
@@ -43,5 +47,27 @@ class Direction: NSManagedObject {
                     onFailure(directions: directions, error: nil)
                 }
         }
+    }
+
+    // MARK : - Helper
+    
+    static func stringForDirection(direction: RouteDirection) -> String {
+        switch direction {
+        case .North:
+            return "North"
+        case .South:
+            return "South"
+        case .East:
+            return "East"
+        case .West:
+            return "West"
+        }
+    }
+    
+    static func routeDirectionForInt(int: Int) -> RouteDirection {
+        if let routeDirection = RouteDirection(rawValue: int) {
+            return routeDirection
+        }
+        return .North
     }
 }
