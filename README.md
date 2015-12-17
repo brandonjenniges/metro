@@ -1,6 +1,6 @@
 # metro
 
-An in development iOS application that utilizes the [NextTrip API](http://svc.metrotransit.org/). 
+An in development iOS application that utilizes the [NexTrip API](http://svc.metrotransit.org/). 
 
 Pre-requisites
 --------------
