@@ -6,18 +6,29 @@ import UIKit
 import MapKit
 import Alamofire
 
-class VehiclesViewController: UIViewController, MKMapViewDelegate {
+class VehiclesViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
     var route: Route!
     var vehicles = [VehicleLocation]()
     static let segue = "showVehicles"
+    
+    let locationManager = CLLocationManager()
+    var userPin: UserAnnotation?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = route.name!
         showVehicles()
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -39,21 +50,19 @@ class VehiclesViewController: UIViewController, MKMapViewDelegate {
         VehicleLocation.getVehicles(route, success: { (vehicles) -> Void in
             
             self.vehicles = vehicles
-            var annotations = [VehicleAnnotation]()
             for v in vehicles {
                 let location = CLLocationCoordinate2D(latitude: CLLocationDegrees(v.vehicleLatitude!), longitude:  CLLocationDegrees(v.vehicleLongitude!))
                 let annotation = VehicleAnnotation(title: "test", locationName: "test", discipline: "test", coordinate: location)
                 self.mapView.addAnnotation(annotation)
-                annotations.append(annotation)
             }
-            self.mapView.showAnnotations(annotations, animated: true)
+            self.mapView.showAnnotations(self.mapView.annotations, animated: true)
             
             }) { (routes, error) -> Void in
                 
         }
     }
     
-    // MARK: - MKMapViewDelegate
+    // MARK : - MKMapViewDelegate
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         let identifier = "pin"
@@ -68,5 +77,20 @@ class VehiclesViewController: UIViewController, MKMapViewDelegate {
             //view.rightCalloutAccessoryView = UIButton.buttonWithType(.DetailDisclosure) as UIView
         }
         return view
+    }
+    
+    // MARK : - CLLocationManager delegate
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations.last! as CLLocation
+        let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        
+        if let userPin = self.userPin {
+            userPin.coordinate = coordinate
+        } else {
+            self.userPin = UserAnnotation(title: "Me", coordinate: coordinate)
+            mapView.addAnnotation(self.userPin!)
+            mapView.showAnnotations(mapView.annotations, animated: true)
+        }
     }
 }

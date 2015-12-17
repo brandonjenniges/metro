@@ -30,6 +30,7 @@
 		C5A49A7D1C0362D400F4C1CA /* RoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49A7C1C0362D400F4C1CA /* RoutesViewController.swift */; };
 		C5A49A871C03634100F4C1CA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49A851C03634100F4C1CA /* Route.swift */; };
 		C5CF29E91C18DC8B00EB2320 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF29E81C18DC8B00EB2320 /* VehicleAnnotation.swift */; };
+		FB6864D01C2281A5008E485A /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6864CF1C2281A5008E485A /* UserAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		C5A49A7C1C0362D400F4C1CA /* RoutesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesViewController.swift; sourceTree = "<group>"; };
 		C5A49A851C03634100F4C1CA /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		C5CF29E81C18DC8B00EB2320 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
+		FB6864CF1C2281A5008E485A /* UserAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				C59C721C1C039DFB004114F9 /* StopsViewController.swift */,
 				C59C721F1C04B1B9004114F9 /* VehiclesViewController.swift */,
 				C5CF29E81C18DC8B00EB2320 /* VehicleAnnotation.swift */,
+				FB6864CF1C2281A5008E485A /* UserAnnotation.swift */,
 			);
 			path = MetroTransit;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				C509EB361C03879F009FDD2F /* VehicleLocation.swift in Sources */,
 				C509EB281C0384D7009FDD2F /* Direction.swift in Sources */,
 				C5A49A871C03634100F4C1CA /* Route.swift in Sources */,
+				FB6864D01C2281A5008E485A /* UserAnnotation.swift in Sources */,
 				C59C72201C04B1B9004114F9 /* VehiclesViewController.swift in Sources */,
 				C5A49A7D1C0362D400F4C1CA /* RoutesViewController.swift in Sources */,
 				C59C721D1C039DFB004114F9 /* StopsViewController.swift in Sources */,
