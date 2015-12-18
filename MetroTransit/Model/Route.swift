@@ -12,7 +12,7 @@ class Route: NSManagedObject {
     
     // MARK: - Core Data
     
-    static func insertWithAttributes(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> Route {
+    static func insert(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> Route {
         let entity = NSEntityDescription.entityForName("Route", inManagedObjectContext: managedObjectContext)
         let route = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedObjectContext) as! Route
         
@@ -39,7 +39,7 @@ class Route: NSManagedObject {
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 if let JSON = response.result.value  as? [[String : AnyObject]] {
                     for item in JSON {
-                        let route = insertWithAttributes(item, managedObjectContext: appDelegate.managedObjectContext)
+                        let route = insert(item, managedObjectContext: appDelegate.managedObjectContext)
                         routes.append(route)
                     }
                     onSuccess(providers: routes)

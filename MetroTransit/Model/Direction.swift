@@ -16,7 +16,7 @@ class Direction: NSManagedObject {
     
     // MARK: - Core Data
     
-    static func insertWithAttributes(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> Direction {
+    static func insert(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> Direction {
         let entity = NSEntityDescription.entityForName("Direction", inManagedObjectContext: managedObjectContext)
         let direction = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedObjectContext) as! Direction
         
@@ -39,7 +39,7 @@ class Direction: NSManagedObject {
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 if let JSON = response.result.value  as? [[String : AnyObject]] {
                     for item in JSON {
-                        let direction = insertWithAttributes(item, managedObjectContext: appDelegate.managedObjectContext)
+                        let direction = insert(item, managedObjectContext: appDelegate.managedObjectContext)
                         directions.append(direction)
                     }
                     onSuccess(directions: directions)

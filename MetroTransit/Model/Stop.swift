@@ -12,7 +12,7 @@ class Stop: NSManagedObject {
 
     // MARK: - Core Data
     
-    static func insertWithAttributes(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> Stop {
+    static func insert(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> Stop {
         let entity = NSEntityDescription.entityForName("Stop", inManagedObjectContext: managedObjectContext)
         let stop = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedObjectContext) as! Stop
         
@@ -35,7 +35,7 @@ class Stop: NSManagedObject {
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 if let JSON = response.result.value  as? [[String : AnyObject]] {
                     for item in JSON {
-                        let stop = insertWithAttributes(item, managedObjectContext: appDelegate.managedObjectContext)
+                        let stop = insert(item, managedObjectContext: appDelegate.managedObjectContext)
                         stops.append(stop)
                     }
                     onSuccess(stops: stops)

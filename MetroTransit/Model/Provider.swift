@@ -11,7 +11,7 @@ class Provider: NSManagedObject {
 
     // MARK: - Core Data
     
-    static func insertWithAttributes(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> Provider {
+    static func insert(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> Provider {
         let entity = NSEntityDescription.entityForName("Provider", inManagedObjectContext: managedObjectContext)
         let provider = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedObjectContext) as! Provider
         
@@ -34,7 +34,7 @@ class Provider: NSManagedObject {
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 if let JSON = response.result.value  as? [[String : AnyObject]] {
                     for item in JSON {
-                        let provider = insertWithAttributes(item, managedObjectContext: appDelegate.managedObjectContext)
+                        let provider = insert(item, managedObjectContext: appDelegate.managedObjectContext)
                         providers.append(provider)
                     }
                     onSuccess(providers: providers)

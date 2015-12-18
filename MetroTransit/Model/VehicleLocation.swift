@@ -12,7 +12,7 @@ class VehicleLocation: NSManagedObject {
     
     // MARK: - Core Data
     
-    static func insertWithAttributes(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> VehicleLocation {
+    static func insert(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> VehicleLocation {
         let entity = NSEntityDescription.entityForName("VehicleLocation", inManagedObjectContext: managedObjectContext)
         let vehicle = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedObjectContext) as! VehicleLocation
         
@@ -33,7 +33,7 @@ class VehicleLocation: NSManagedObject {
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 if let JSON = response.result.value  as? [[String : AnyObject]] {
                     for item in JSON {
-                        let vehicle = insertWithAttributes(item, managedObjectContext: appDelegate.managedObjectContext)
+                        let vehicle = insert(item, managedObjectContext: appDelegate.managedObjectContext)
                         vehicles.append(vehicle)
                     }
                     onSuccess(vehicles: vehicles)
