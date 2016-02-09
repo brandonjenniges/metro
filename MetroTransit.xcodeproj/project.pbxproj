@@ -31,7 +31,18 @@
 		C5A49A871C03634100F4C1CA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49A851C03634100F4C1CA /* Route.swift */; };
 		C5CF29E91C18DC8B00EB2320 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF29E81C18DC8B00EB2320 /* VehicleAnnotation.swift */; };
 		FB6864D01C2281A5008E485A /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6864CF1C2281A5008E485A /* UserAnnotation.swift */; };
-		FBE926821C698C67001C2078 /* MetroTransitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926811C698C67001C2078 /* MetroTransitTests.swift */; };
+		FBE9269C1C698EE5001C2078 /* DirectionsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9268F1C698EE5001C2078 /* DirectionsViewControllerTests.swift */; };
+		FBE9269D1C698EE5001C2078 /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926911C698EE5001C2078 /* DirectionTests.swift */; };
+		FBE9269E1C698EE5001C2078 /* ProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926921C698EE5001C2078 /* ProviderTests.swift */; };
+		FBE9269F1C698EE5001C2078 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926931C698EE5001C2078 /* RouteTests.swift */; };
+		FBE926A01C698EE5001C2078 /* StopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926941C698EE5001C2078 /* StopTests.swift */; };
+		FBE926A11C698EE5001C2078 /* VehicleLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926951C698EE5001C2078 /* VehicleLocationTests.swift */; };
+		FBE926A21C698EE5001C2078 /* ProvidersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926961C698EE5001C2078 /* ProvidersViewControllerTests.swift */; };
+		FBE926A31C698EE5001C2078 /* RoutesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926971C698EE5001C2078 /* RoutesViewControllerTests.swift */; };
+		FBE926A41C698EE5001C2078 /* StopsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926981C698EE5001C2078 /* StopsViewControllerTests.swift */; };
+		FBE926A51C698EE5001C2078 /* UserAnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926991C698EE5001C2078 /* UserAnnotationTests.swift */; };
+		FBE926A61C698EE5001C2078 /* VehicleAnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9269A1C698EE5001C2078 /* VehicleAnnotationTests.swift */; };
+		FBE926A71C698EE5001C2078 /* VehiclesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9269B1C698EE5001C2078 /* VehiclesViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,8 +152,19 @@
 		C5CF29E81C18DC8B00EB2320 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
 		FB6864CF1C2281A5008E485A /* UserAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
 		FBE9267F1C698C66001C2078 /* MetroTransitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroTransitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBE926811C698C67001C2078 /* MetroTransitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroTransitTests.swift; sourceTree = "<group>"; };
 		FBE926831C698C67001C2078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE9268F1C698EE5001C2078 /* DirectionsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewControllerTests.swift; sourceTree = "<group>"; };
+		FBE926911C698EE5001C2078 /* DirectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
+		FBE926921C698EE5001C2078 /* ProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderTests.swift; sourceTree = "<group>"; };
+		FBE926931C698EE5001C2078 /* RouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTests.swift; sourceTree = "<group>"; };
+		FBE926941C698EE5001C2078 /* StopTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTests.swift; sourceTree = "<group>"; };
+		FBE926951C698EE5001C2078 /* VehicleLocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleLocationTests.swift; sourceTree = "<group>"; };
+		FBE926961C698EE5001C2078 /* ProvidersViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidersViewControllerTests.swift; sourceTree = "<group>"; };
+		FBE926971C698EE5001C2078 /* RoutesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesViewControllerTests.swift; sourceTree = "<group>"; };
+		FBE926981C698EE5001C2078 /* StopsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsViewControllerTests.swift; sourceTree = "<group>"; };
+		FBE926991C698EE5001C2078 /* UserAnnotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAnnotationTests.swift; sourceTree = "<group>"; };
+		FBE9269A1C698EE5001C2078 /* VehicleAnnotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleAnnotationTests.swift; sourceTree = "<group>"; };
+		FBE9269B1C698EE5001C2078 /* VehiclesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,10 +260,29 @@
 		FBE926801C698C67001C2078 /* MetroTransitTests */ = {
 			isa = PBXGroup;
 			children = (
-				FBE926811C698C67001C2078 /* MetroTransitTests.swift */,
+				FBE9268F1C698EE5001C2078 /* DirectionsViewControllerTests.swift */,
 				FBE926831C698C67001C2078 /* Info.plist */,
+				FBE926901C698EE5001C2078 /* Model */,
+				FBE926961C698EE5001C2078 /* ProvidersViewControllerTests.swift */,
+				FBE926971C698EE5001C2078 /* RoutesViewControllerTests.swift */,
+				FBE926981C698EE5001C2078 /* StopsViewControllerTests.swift */,
+				FBE926991C698EE5001C2078 /* UserAnnotationTests.swift */,
+				FBE9269A1C698EE5001C2078 /* VehicleAnnotationTests.swift */,
+				FBE9269B1C698EE5001C2078 /* VehiclesViewControllerTests.swift */,
 			);
 			path = MetroTransitTests;
+			sourceTree = "<group>";
+		};
+		FBE926901C698EE5001C2078 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBE926911C698EE5001C2078 /* DirectionTests.swift */,
+				FBE926921C698EE5001C2078 /* ProviderTests.swift */,
+				FBE926931C698EE5001C2078 /* RouteTests.swift */,
+				FBE926941C698EE5001C2078 /* StopTests.swift */,
+				FBE926951C698EE5001C2078 /* VehicleLocationTests.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,7 +472,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE926821C698C67001C2078 /* MetroTransitTests.swift in Sources */,
+				FBE9269E1C698EE5001C2078 /* ProviderTests.swift in Sources */,
+				FBE926A61C698EE5001C2078 /* VehicleAnnotationTests.swift in Sources */,
+				FBE926A21C698EE5001C2078 /* ProvidersViewControllerTests.swift in Sources */,
+				FBE926A71C698EE5001C2078 /* VehiclesViewControllerTests.swift in Sources */,
+				FBE9269F1C698EE5001C2078 /* RouteTests.swift in Sources */,
+				FBE9269C1C698EE5001C2078 /* DirectionsViewControllerTests.swift in Sources */,
+				FBE926A41C698EE5001C2078 /* StopsViewControllerTests.swift in Sources */,
+				FBE926A51C698EE5001C2078 /* UserAnnotationTests.swift in Sources */,
+				FBE926A11C698EE5001C2078 /* VehicleLocationTests.swift in Sources */,
+				FBE926A01C698EE5001C2078 /* StopTests.swift in Sources */,
+				FBE926A31C698EE5001C2078 /* RoutesViewControllerTests.swift in Sources */,
+				FBE9269D1C698EE5001C2078 /* DirectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,11 +633,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MetroTransitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetroTransit.app/MetroTransit";
 			};
 			name = Debug;
@@ -594,6 +648,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MetroTransitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

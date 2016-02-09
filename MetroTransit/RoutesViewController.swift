@@ -46,6 +46,10 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
+    static func getViewController() -> RoutesViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(String(RoutesViewController)) as! RoutesViewController
+    }
+    
     // MARK : - UITableView datasource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
