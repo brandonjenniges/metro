@@ -5,6 +5,8 @@ platform :ios do
   ############################## PRE ##############################
 
   before_all do
+    
+    cocoapods
 
   end
 

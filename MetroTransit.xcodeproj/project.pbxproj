@@ -7,176 +7,130 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C509EB1A1C03846C009FDD2F /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C509EB191C03846C009FDD2F /* DirectionsViewController.swift */; };
-		C509EB281C0384D7009FDD2F /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C509EB261C0384D7009FDD2F /* Direction.swift */; };
-		C509EB321C03879F009FDD2F /* Stop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C509EB2B1C03879F009FDD2F /* Stop+CoreDataProperties.swift */; };
-		C509EB331C03879F009FDD2F /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C509EB2C1C03879F009FDD2F /* Stop.swift */; };
-		C509EB351C03879F009FDD2F /* VehicleLocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C509EB2E1C03879F009FDD2F /* VehicleLocation+CoreDataProperties.swift */; };
-		C509EB361C03879F009FDD2F /* VehicleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C509EB2F1C03879F009FDD2F /* VehicleLocation.swift */; };
-		C5313B5D1BFCC88E00CFA14F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5313B5C1BFCC88E00CFA14F /* AppDelegate.swift */; };
-		C5313B5F1BFCC88E00CFA14F /* ProvidersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5313B5E1BFCC88E00CFA14F /* ProvidersViewController.swift */; };
-		C5313B621BFCC88E00CFA14F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5313B601BFCC88E00CFA14F /* Main.storyboard */; };
-		C5313B641BFCC88E00CFA14F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5313B631BFCC88E00CFA14F /* Assets.xcassets */; };
-		C5313B671BFCC88E00CFA14F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5313B651BFCC88E00CFA14F /* LaunchScreen.storyboard */; };
-		C5313BAA1BFCCA5200CFA14F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5313B9D1BFCC9DF00CFA14F /* Alamofire.framework */; };
-		C5313BAB1BFCCA5200CFA14F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5313B9D1BFCC9DF00CFA14F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C5313BD21BFCCE4B00CFA14F /* MetroAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5313BD01BFCCE4B00CFA14F /* MetroAPI.xcdatamodeld */; };
-		C5841F0F1BFFAE5E00DF5CF0 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5841F0D1BFFAE5E00DF5CF0 /* Provider.swift */; };
-		C59C72191C038817004114F9 /* Direction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C72161C038817004114F9 /* Direction+CoreDataProperties.swift */; };
-		C59C721A1C038817004114F9 /* Provider+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C72171C038817004114F9 /* Provider+CoreDataProperties.swift */; };
-		C59C721B1C038817004114F9 /* Route+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C72181C038817004114F9 /* Route+CoreDataProperties.swift */; };
-		C59C721D1C039DFB004114F9 /* StopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C721C1C039DFB004114F9 /* StopsViewController.swift */; };
-		C59C72201C04B1B9004114F9 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C721F1C04B1B9004114F9 /* VehiclesViewController.swift */; };
-		C5A49A7D1C0362D400F4C1CA /* RoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49A7C1C0362D400F4C1CA /* RoutesViewController.swift */; };
-		C5A49A871C03634100F4C1CA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49A851C03634100F4C1CA /* Route.swift */; };
-		C5CF29E91C18DC8B00EB2320 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF29E81C18DC8B00EB2320 /* VehicleAnnotation.swift */; };
-		FB6864D01C2281A5008E485A /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6864CF1C2281A5008E485A /* UserAnnotation.swift */; };
-		FBE9269C1C698EE5001C2078 /* DirectionsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9268F1C698EE5001C2078 /* DirectionsViewControllerTests.swift */; };
-		FBE9269D1C698EE5001C2078 /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926911C698EE5001C2078 /* DirectionTests.swift */; };
-		FBE9269E1C698EE5001C2078 /* ProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926921C698EE5001C2078 /* ProviderTests.swift */; };
-		FBE9269F1C698EE5001C2078 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926931C698EE5001C2078 /* RouteTests.swift */; };
-		FBE926A01C698EE5001C2078 /* StopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926941C698EE5001C2078 /* StopTests.swift */; };
-		FBE926A11C698EE5001C2078 /* VehicleLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926951C698EE5001C2078 /* VehicleLocationTests.swift */; };
-		FBE926A21C698EE5001C2078 /* ProvidersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926961C698EE5001C2078 /* ProvidersViewControllerTests.swift */; };
-		FBE926A31C698EE5001C2078 /* RoutesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926971C698EE5001C2078 /* RoutesViewControllerTests.swift */; };
-		FBE926A41C698EE5001C2078 /* StopsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926981C698EE5001C2078 /* StopsViewControllerTests.swift */; };
-		FBE926A51C698EE5001C2078 /* UserAnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926991C698EE5001C2078 /* UserAnnotationTests.swift */; };
-		FBE926A61C698EE5001C2078 /* VehicleAnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9269A1C698EE5001C2078 /* VehicleAnnotationTests.swift */; };
-		FBE926A71C698EE5001C2078 /* VehiclesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9269B1C698EE5001C2078 /* VehiclesViewControllerTests.swift */; };
+		07F45C4216E3D01B40FA2EDB /* Pods_MetroTransit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF8000B9FE520985A25FFE8 /* Pods_MetroTransit.framework */; };
+		E9E9F37C0686308234788731 /* Pods_MetroTransitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D770E759B172C348A7B970 /* Pods_MetroTransitTests.framework */; };
+		FB39EBBB1C699B71009D8B95 /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBA91C699B71009D8B95 /* DirectionsViewController.swift */; };
+		FB39EBBC1C699B71009D8B95 /* Direction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBAB1C699B71009D8B95 /* Direction+CoreDataProperties.swift */; };
+		FB39EBBD1C699B71009D8B95 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBAC1C699B71009D8B95 /* Direction.swift */; };
+		FB39EBBE1C699B71009D8B95 /* Provider+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBAD1C699B71009D8B95 /* Provider+CoreDataProperties.swift */; };
+		FB39EBBF1C699B71009D8B95 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBAE1C699B71009D8B95 /* Provider.swift */; };
+		FB39EBC01C699B71009D8B95 /* Route+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBAF1C699B71009D8B95 /* Route+CoreDataProperties.swift */; };
+		FB39EBC11C699B71009D8B95 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBB01C699B71009D8B95 /* Route.swift */; };
+		FB39EBC21C699B71009D8B95 /* Stop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBB11C699B71009D8B95 /* Stop+CoreDataProperties.swift */; };
+		FB39EBC31C699B71009D8B95 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBB21C699B71009D8B95 /* Stop.swift */; };
+		FB39EBC41C699B71009D8B95 /* VehicleLocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBB31C699B71009D8B95 /* VehicleLocation+CoreDataProperties.swift */; };
+		FB39EBC51C699B71009D8B95 /* VehicleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBB41C699B71009D8B95 /* VehicleLocation.swift */; };
+		FB39EBC61C699B71009D8B95 /* ProvidersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBB51C699B71009D8B95 /* ProvidersViewController.swift */; };
+		FB39EBC71C699B71009D8B95 /* RoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBB61C699B71009D8B95 /* RoutesViewController.swift */; };
+		FB39EBC81C699B71009D8B95 /* StopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBB71C699B71009D8B95 /* StopsViewController.swift */; };
+		FB39EBC91C699B71009D8B95 /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBB81C699B71009D8B95 /* UserAnnotation.swift */; };
+		FB39EBCA1C699B71009D8B95 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBB91C699B71009D8B95 /* VehicleAnnotation.swift */; };
+		FB39EBCB1C699B71009D8B95 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBBA1C699B71009D8B95 /* VehiclesViewController.swift */; };
+		FB39EBCE1C699BDC009D8B95 /* MetroAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBCC1C699BDC009D8B95 /* MetroAPI.xcdatamodeld */; };
+		FB39EBDC1C699E5D009D8B95 /* DirectionsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBCF1C699E5D009D8B95 /* DirectionsViewControllerTests.swift */; };
+		FB39EBDD1C699E5D009D8B95 /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD11C699E5D009D8B95 /* DirectionTests.swift */; };
+		FB39EBDE1C699E5D009D8B95 /* ProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD21C699E5D009D8B95 /* ProviderTests.swift */; };
+		FB39EBDF1C699E5D009D8B95 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD31C699E5D009D8B95 /* RouteTests.swift */; };
+		FB39EBE01C699E5D009D8B95 /* StopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD41C699E5D009D8B95 /* StopTests.swift */; };
+		FB39EBE11C699E5D009D8B95 /* VehicleLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD51C699E5D009D8B95 /* VehicleLocationTests.swift */; };
+		FB39EBE21C699E5D009D8B95 /* ProvidersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD61C699E5D009D8B95 /* ProvidersViewControllerTests.swift */; };
+		FB39EBE31C699E5D009D8B95 /* RoutesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD71C699E5D009D8B95 /* RoutesViewControllerTests.swift */; };
+		FB39EBE41C699E5D009D8B95 /* StopsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD81C699E5D009D8B95 /* StopsViewControllerTests.swift */; };
+		FB39EBE51C699E5D009D8B95 /* UserAnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD91C699E5D009D8B95 /* UserAnnotationTests.swift */; };
+		FB39EBE61C699E5D009D8B95 /* VehicleAnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBDA1C699E5D009D8B95 /* VehicleAnnotationTests.swift */; };
+		FB39EBE71C699E5D009D8B95 /* VehiclesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBDB1C699E5D009D8B95 /* VehiclesViewControllerTests.swift */; };
+		FBB2CA5D1C699A31004D17D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2CA5C1C699A31004D17D3 /* AppDelegate.swift */; };
+		FBB2CA621C699A31004D17D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB2CA601C699A31004D17D3 /* Main.storyboard */; };
+		FBB2CA671C699A31004D17D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB2CA661C699A31004D17D3 /* Assets.xcassets */; };
+		FBB2CA6A1C699A31004D17D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB2CA681C699A31004D17D3 /* LaunchScreen.storyboard */; };
+		FBB2CA801C699A31004D17D3 /* MetroTransitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2CA7F1C699A31004D17D3 /* MetroTransitUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C5313B9C1BFCC9DF00CFA14F /* PBXContainerItemProxy */ = {
+		FBB2CA711C699A31004D17D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C5313B921BFCC9DF00CFA14F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS";
-		};
-		C5313B9E1BFCC9DF00CFA14F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5313B921BFCC9DF00CFA14F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS Tests";
-		};
-		C5313BA01BFCC9DF00CFA14F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5313B921BFCC9DF00CFA14F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
-			remoteInfo = "Alamofire OSX";
-		};
-		C5313BA21BFCC9DF00CFA14F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5313B921BFCC9DF00CFA14F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
-			remoteInfo = "Alamofire OSX Tests";
-		};
-		C5313BA41BFCC9DF00CFA14F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5313B921BFCC9DF00CFA14F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS";
-		};
-		C5313BA61BFCC9DF00CFA14F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5313B921BFCC9DF00CFA14F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS Tests";
-		};
-		C5313BA81BFCC9DF00CFA14F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5313B921BFCC9DF00CFA14F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E4202FE01B667AA100C997FB;
-			remoteInfo = "Alamofire watchOS";
-		};
-		C5313BAC1BFCCA5200CFA14F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5313B921BFCC9DF00CFA14F /* Alamofire.xcodeproj */;
+			containerPortal = FBB2CA511C699A31004D17D3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS";
+			remoteGlobalIDString = FBB2CA581C699A31004D17D3;
+			remoteInfo = MetroTransit;
 		};
-		FBE926841C698C67001C2078 /* PBXContainerItemProxy */ = {
+		FBB2CA7C1C699A31004D17D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C5313B511BFCC88E00CFA14F /* Project object */;
+			containerPortal = FBB2CA511C699A31004D17D3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C5313B581BFCC88E00CFA14F;
+			remoteGlobalIDString = FBB2CA581C699A31004D17D3;
 			remoteInfo = MetroTransit;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		C5313BAE1BFCCA5200CFA14F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C5313BAB1BFCCA5200CFA14F /* Alamofire.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		C509EB191C03846C009FDD2F /* DirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
-		C509EB261C0384D7009FDD2F /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
-		C509EB2B1C03879F009FDD2F /* Stop+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C509EB2C1C03879F009FDD2F /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
-		C509EB2E1C03879F009FDD2F /* VehicleLocation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VehicleLocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C509EB2F1C03879F009FDD2F /* VehicleLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleLocation.swift; sourceTree = "<group>"; };
-		C5313B591BFCC88E00CFA14F /* MetroTransit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5313B5C1BFCC88E00CFA14F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5313B5E1BFCC88E00CFA14F /* ProvidersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersViewController.swift; sourceTree = "<group>"; };
-		C5313B611BFCC88E00CFA14F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C5313B631BFCC88E00CFA14F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C5313B661BFCC88E00CFA14F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C5313B681BFCC88E00CFA14F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5313B921BFCC9DF00CFA14F /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
-		C5313BD11BFCCE4B00CFA14F /* MetroAPI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MetroAPI.xcdatamodel; sourceTree = "<group>"; };
-		C5841F0D1BFFAE5E00DF5CF0 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
-		C59C72161C038817004114F9 /* Direction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Direction+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C59C72171C038817004114F9 /* Provider+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Provider+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C59C72181C038817004114F9 /* Route+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Route+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C59C721C1C039DFB004114F9 /* StopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsViewController.swift; sourceTree = "<group>"; };
-		C59C721F1C04B1B9004114F9 /* VehiclesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesViewController.swift; sourceTree = "<group>"; };
-		C5A49A7C1C0362D400F4C1CA /* RoutesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesViewController.swift; sourceTree = "<group>"; };
-		C5A49A851C03634100F4C1CA /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		C5CF29E81C18DC8B00EB2320 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
-		FB6864CF1C2281A5008E485A /* UserAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
-		FBE9267F1C698C66001C2078 /* MetroTransitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroTransitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBE926831C698C67001C2078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBE9268F1C698EE5001C2078 /* DirectionsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewControllerTests.swift; sourceTree = "<group>"; };
-		FBE926911C698EE5001C2078 /* DirectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
-		FBE926921C698EE5001C2078 /* ProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderTests.swift; sourceTree = "<group>"; };
-		FBE926931C698EE5001C2078 /* RouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTests.swift; sourceTree = "<group>"; };
-		FBE926941C698EE5001C2078 /* StopTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTests.swift; sourceTree = "<group>"; };
-		FBE926951C698EE5001C2078 /* VehicleLocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleLocationTests.swift; sourceTree = "<group>"; };
-		FBE926961C698EE5001C2078 /* ProvidersViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidersViewControllerTests.swift; sourceTree = "<group>"; };
-		FBE926971C698EE5001C2078 /* RoutesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesViewControllerTests.swift; sourceTree = "<group>"; };
-		FBE926981C698EE5001C2078 /* StopsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsViewControllerTests.swift; sourceTree = "<group>"; };
-		FBE926991C698EE5001C2078 /* UserAnnotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAnnotationTests.swift; sourceTree = "<group>"; };
-		FBE9269A1C698EE5001C2078 /* VehicleAnnotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleAnnotationTests.swift; sourceTree = "<group>"; };
-		FBE9269B1C698EE5001C2078 /* VehiclesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesViewControllerTests.swift; sourceTree = "<group>"; };
+		06D68035F2B9314E9DDC56E0 /* Pods-MetroTransit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroTransit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetroTransit/Pods-MetroTransit.debug.xcconfig"; sourceTree = "<group>"; };
+		3A08C3B33D8A0FF06B752F49 /* Pods-MetroTransitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroTransitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetroTransitTests/Pods-MetroTransitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		781C07B3BA0E753280F2F80B /* Pods-MetroTransitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroTransitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetroTransitTests/Pods-MetroTransitTests.release.xcconfig"; sourceTree = "<group>"; };
+		93D770E759B172C348A7B970 /* Pods_MetroTransitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetroTransitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF8000B9FE520985A25FFE8 /* Pods_MetroTransit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetroTransit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7EC85033AFBC6BABFC1F613 /* Pods-MetroTransit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroTransit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetroTransit/Pods-MetroTransit.release.xcconfig"; sourceTree = "<group>"; };
+		FB39EBA91C699B71009D8B95 /* DirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
+		FB39EBAB1C699B71009D8B95 /* Direction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Direction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FB39EBAC1C699B71009D8B95 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		FB39EBAD1C699B71009D8B95 /* Provider+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Provider+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FB39EBAE1C699B71009D8B95 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		FB39EBAF1C699B71009D8B95 /* Route+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Route+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FB39EBB01C699B71009D8B95 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		FB39EBB11C699B71009D8B95 /* Stop+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FB39EBB21C699B71009D8B95 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		FB39EBB31C699B71009D8B95 /* VehicleLocation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VehicleLocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FB39EBB41C699B71009D8B95 /* VehicleLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleLocation.swift; sourceTree = "<group>"; };
+		FB39EBB51C699B71009D8B95 /* ProvidersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidersViewController.swift; sourceTree = "<group>"; };
+		FB39EBB61C699B71009D8B95 /* RoutesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesViewController.swift; sourceTree = "<group>"; };
+		FB39EBB71C699B71009D8B95 /* StopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsViewController.swift; sourceTree = "<group>"; };
+		FB39EBB81C699B71009D8B95 /* UserAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
+		FB39EBB91C699B71009D8B95 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
+		FB39EBBA1C699B71009D8B95 /* VehiclesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesViewController.swift; sourceTree = "<group>"; };
+		FB39EBCD1C699BDC009D8B95 /* MetroAPI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MetroAPI.xcdatamodel; sourceTree = "<group>"; };
+		FB39EBCF1C699E5D009D8B95 /* DirectionsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewControllerTests.swift; sourceTree = "<group>"; };
+		FB39EBD11C699E5D009D8B95 /* DirectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
+		FB39EBD21C699E5D009D8B95 /* ProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderTests.swift; sourceTree = "<group>"; };
+		FB39EBD31C699E5D009D8B95 /* RouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTests.swift; sourceTree = "<group>"; };
+		FB39EBD41C699E5D009D8B95 /* StopTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTests.swift; sourceTree = "<group>"; };
+		FB39EBD51C699E5D009D8B95 /* VehicleLocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleLocationTests.swift; sourceTree = "<group>"; };
+		FB39EBD61C699E5D009D8B95 /* ProvidersViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidersViewControllerTests.swift; sourceTree = "<group>"; };
+		FB39EBD71C699E5D009D8B95 /* RoutesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesViewControllerTests.swift; sourceTree = "<group>"; };
+		FB39EBD81C699E5D009D8B95 /* StopsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsViewControllerTests.swift; sourceTree = "<group>"; };
+		FB39EBD91C699E5D009D8B95 /* UserAnnotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAnnotationTests.swift; sourceTree = "<group>"; };
+		FB39EBDA1C699E5D009D8B95 /* VehicleAnnotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleAnnotationTests.swift; sourceTree = "<group>"; };
+		FB39EBDB1C699E5D009D8B95 /* VehiclesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesViewControllerTests.swift; sourceTree = "<group>"; };
+		FBB2CA591C699A31004D17D3 /* MetroTransit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB2CA5C1C699A31004D17D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBB2CA611C699A31004D17D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBB2CA661C699A31004D17D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBB2CA691C699A31004D17D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBB2CA6B1C699A31004D17D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB2CA701C699A31004D17D3 /* MetroTransitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroTransitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB2CA761C699A31004D17D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB2CA7B1C699A31004D17D3 /* MetroTransitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroTransitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB2CA7F1C699A31004D17D3 /* MetroTransitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroTransitUITests.swift; sourceTree = "<group>"; };
+		FBB2CA811C699A31004D17D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C5313B561BFCC88E00CFA14F /* Frameworks */ = {
+		FBB2CA561C699A31004D17D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5313BAA1BFCCA5200CFA14F /* Alamofire.framework in Frameworks */,
+				07F45C4216E3D01B40FA2EDB /* Pods_MetroTransit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBE9267C1C698C66001C2078 /* Frameworks */ = {
+		FBB2CA6D1C699A31004D17D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E9F37C0686308234788731 /* Pods_MetroTransitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB2CA781C699A31004D17D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -186,165 +140,209 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C5313B501BFCC88E00CFA14F = {
+		2F38DB289A138684A5B56C6E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C5313B5B1BFCC88E00CFA14F /* MetroTransit */,
-				FBE926801C698C67001C2078 /* MetroTransitTests */,
-				C5313B5A1BFCC88E00CFA14F /* Products */,
-				C5313B921BFCC9DF00CFA14F /* Alamofire.xcodeproj */,
+				06D68035F2B9314E9DDC56E0 /* Pods-MetroTransit.debug.xcconfig */,
+				E7EC85033AFBC6BABFC1F613 /* Pods-MetroTransit.release.xcconfig */,
+				3A08C3B33D8A0FF06B752F49 /* Pods-MetroTransitTests.debug.xcconfig */,
+				781C07B3BA0E753280F2F80B /* Pods-MetroTransitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5CE719056BE3F52EA855CA9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8000B9FE520985A25FFE8 /* Pods_MetroTransit.framework */,
+				93D770E759B172C348A7B970 /* Pods_MetroTransitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB39EBAA1C699B71009D8B95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB39EBAB1C699B71009D8B95 /* Direction+CoreDataProperties.swift */,
+				FB39EBAC1C699B71009D8B95 /* Direction.swift */,
+				FB39EBAD1C699B71009D8B95 /* Provider+CoreDataProperties.swift */,
+				FB39EBAE1C699B71009D8B95 /* Provider.swift */,
+				FB39EBAF1C699B71009D8B95 /* Route+CoreDataProperties.swift */,
+				FB39EBB01C699B71009D8B95 /* Route.swift */,
+				FB39EBB11C699B71009D8B95 /* Stop+CoreDataProperties.swift */,
+				FB39EBB21C699B71009D8B95 /* Stop.swift */,
+				FB39EBB31C699B71009D8B95 /* VehicleLocation+CoreDataProperties.swift */,
+				FB39EBB41C699B71009D8B95 /* VehicleLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB39EBD01C699E5D009D8B95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB39EBD11C699E5D009D8B95 /* DirectionTests.swift */,
+				FB39EBD21C699E5D009D8B95 /* ProviderTests.swift */,
+				FB39EBD31C699E5D009D8B95 /* RouteTests.swift */,
+				FB39EBD41C699E5D009D8B95 /* StopTests.swift */,
+				FB39EBD51C699E5D009D8B95 /* VehicleLocationTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBB2CA501C699A31004D17D3 = {
+			isa = PBXGroup;
+			children = (
+				FBB2CA5B1C699A31004D17D3 /* MetroTransit */,
+				FBB2CA731C699A31004D17D3 /* MetroTransitTests */,
+				FBB2CA7E1C699A31004D17D3 /* MetroTransitUITests */,
+				FBB2CA5A1C699A31004D17D3 /* Products */,
+				2F38DB289A138684A5B56C6E /* Pods */,
+				5CE719056BE3F52EA855CA9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		C5313B5A1BFCC88E00CFA14F /* Products */ = {
+		FBB2CA5A1C699A31004D17D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C5313B591BFCC88E00CFA14F /* MetroTransit.app */,
-				FBE9267F1C698C66001C2078 /* MetroTransitTests.xctest */,
+				FBB2CA591C699A31004D17D3 /* MetroTransit.app */,
+				FBB2CA701C699A31004D17D3 /* MetroTransitTests.xctest */,
+				FBB2CA7B1C699A31004D17D3 /* MetroTransitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C5313B5B1BFCC88E00CFA14F /* MetroTransit */ = {
+		FBB2CA5B1C699A31004D17D3 /* MetroTransit */ = {
 			isa = PBXGroup;
 			children = (
-				C5841F0B1BFFAE5E00DF5CF0 /* Model */,
-				C5313B5C1BFCC88E00CFA14F /* AppDelegate.swift */,
-				C5313B5E1BFCC88E00CFA14F /* ProvidersViewController.swift */,
-				C5313B601BFCC88E00CFA14F /* Main.storyboard */,
-				C5313B631BFCC88E00CFA14F /* Assets.xcassets */,
-				C5313B651BFCC88E00CFA14F /* LaunchScreen.storyboard */,
-				C5313B681BFCC88E00CFA14F /* Info.plist */,
-				C5313BD01BFCCE4B00CFA14F /* MetroAPI.xcdatamodeld */,
-				C5A49A7C1C0362D400F4C1CA /* RoutesViewController.swift */,
-				C509EB191C03846C009FDD2F /* DirectionsViewController.swift */,
-				C59C721C1C039DFB004114F9 /* StopsViewController.swift */,
-				C59C721F1C04B1B9004114F9 /* VehiclesViewController.swift */,
-				C5CF29E81C18DC8B00EB2320 /* VehicleAnnotation.swift */,
-				FB6864CF1C2281A5008E485A /* UserAnnotation.swift */,
+				FB39EBCC1C699BDC009D8B95 /* MetroAPI.xcdatamodeld */,
+				FB39EBA91C699B71009D8B95 /* DirectionsViewController.swift */,
+				FB39EBAA1C699B71009D8B95 /* Model */,
+				FB39EBB51C699B71009D8B95 /* ProvidersViewController.swift */,
+				FB39EBB61C699B71009D8B95 /* RoutesViewController.swift */,
+				FB39EBB71C699B71009D8B95 /* StopsViewController.swift */,
+				FB39EBB81C699B71009D8B95 /* UserAnnotation.swift */,
+				FB39EBB91C699B71009D8B95 /* VehicleAnnotation.swift */,
+				FB39EBBA1C699B71009D8B95 /* VehiclesViewController.swift */,
+				FBB2CA5C1C699A31004D17D3 /* AppDelegate.swift */,
+				FBB2CA601C699A31004D17D3 /* Main.storyboard */,
+				FBB2CA661C699A31004D17D3 /* Assets.xcassets */,
+				FBB2CA681C699A31004D17D3 /* LaunchScreen.storyboard */,
+				FBB2CA6B1C699A31004D17D3 /* Info.plist */,
 			);
 			path = MetroTransit;
 			sourceTree = "<group>";
 		};
-		C5313B931BFCC9DF00CFA14F /* Products */ = {
+		FBB2CA731C699A31004D17D3 /* MetroTransitTests */ = {
 			isa = PBXGroup;
 			children = (
-				C5313B9D1BFCC9DF00CFA14F /* Alamofire.framework */,
-				C5313B9F1BFCC9DF00CFA14F /* Alamofire iOS Tests.xctest */,
-				C5313BA11BFCC9DF00CFA14F /* Alamofire.framework */,
-				C5313BA31BFCC9DF00CFA14F /* Alamofire OSX Tests.xctest */,
-				C5313BA51BFCC9DF00CFA14F /* Alamofire.framework */,
-				C5313BA71BFCC9DF00CFA14F /* Alamofire tvOS Tests.xctest */,
-				C5313BA91BFCC9DF00CFA14F /* Alamofire.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C5841F0B1BFFAE5E00DF5CF0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C509EB261C0384D7009FDD2F /* Direction.swift */,
-				C59C72161C038817004114F9 /* Direction+CoreDataProperties.swift */,
-				C5841F0D1BFFAE5E00DF5CF0 /* Provider.swift */,
-				C59C72171C038817004114F9 /* Provider+CoreDataProperties.swift */,
-				C5A49A851C03634100F4C1CA /* Route.swift */,
-				C59C72181C038817004114F9 /* Route+CoreDataProperties.swift */,
-				C509EB2C1C03879F009FDD2F /* Stop.swift */,
-				C509EB2B1C03879F009FDD2F /* Stop+CoreDataProperties.swift */,
-				C509EB2F1C03879F009FDD2F /* VehicleLocation.swift */,
-				C509EB2E1C03879F009FDD2F /* VehicleLocation+CoreDataProperties.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FBE926801C698C67001C2078 /* MetroTransitTests */ = {
-			isa = PBXGroup;
-			children = (
-				FBE9268F1C698EE5001C2078 /* DirectionsViewControllerTests.swift */,
-				FBE926831C698C67001C2078 /* Info.plist */,
-				FBE926901C698EE5001C2078 /* Model */,
-				FBE926961C698EE5001C2078 /* ProvidersViewControllerTests.swift */,
-				FBE926971C698EE5001C2078 /* RoutesViewControllerTests.swift */,
-				FBE926981C698EE5001C2078 /* StopsViewControllerTests.swift */,
-				FBE926991C698EE5001C2078 /* UserAnnotationTests.swift */,
-				FBE9269A1C698EE5001C2078 /* VehicleAnnotationTests.swift */,
-				FBE9269B1C698EE5001C2078 /* VehiclesViewControllerTests.swift */,
+				FB39EBCF1C699E5D009D8B95 /* DirectionsViewControllerTests.swift */,
+				FBB2CA761C699A31004D17D3 /* Info.plist */,
+				FB39EBD01C699E5D009D8B95 /* Model */,
+				FB39EBD61C699E5D009D8B95 /* ProvidersViewControllerTests.swift */,
+				FB39EBD71C699E5D009D8B95 /* RoutesViewControllerTests.swift */,
+				FB39EBD81C699E5D009D8B95 /* StopsViewControllerTests.swift */,
+				FB39EBD91C699E5D009D8B95 /* UserAnnotationTests.swift */,
+				FB39EBDA1C699E5D009D8B95 /* VehicleAnnotationTests.swift */,
+				FB39EBDB1C699E5D009D8B95 /* VehiclesViewControllerTests.swift */,
 			);
 			path = MetroTransitTests;
 			sourceTree = "<group>";
 		};
-		FBE926901C698EE5001C2078 /* Model */ = {
+		FBB2CA7E1C699A31004D17D3 /* MetroTransitUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FBE926911C698EE5001C2078 /* DirectionTests.swift */,
-				FBE926921C698EE5001C2078 /* ProviderTests.swift */,
-				FBE926931C698EE5001C2078 /* RouteTests.swift */,
-				FBE926941C698EE5001C2078 /* StopTests.swift */,
-				FBE926951C698EE5001C2078 /* VehicleLocationTests.swift */,
+				FBB2CA7F1C699A31004D17D3 /* MetroTransitUITests.swift */,
+				FBB2CA811C699A31004D17D3 /* Info.plist */,
 			);
-			path = Model;
+			path = MetroTransitUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C5313B581BFCC88E00CFA14F /* MetroTransit */ = {
+		FBB2CA581C699A31004D17D3 /* MetroTransit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5313B6B1BFCC88E00CFA14F /* Build configuration list for PBXNativeTarget "MetroTransit" */;
+			buildConfigurationList = FBB2CA841C699A31004D17D3 /* Build configuration list for PBXNativeTarget "MetroTransit" */;
 			buildPhases = (
-				C5313B551BFCC88E00CFA14F /* Sources */,
-				C5313B561BFCC88E00CFA14F /* Frameworks */,
-				C5313B571BFCC88E00CFA14F /* Resources */,
-				C5313BAE1BFCCA5200CFA14F /* Embed Frameworks */,
+				CA37B9C3144877EDB76D45C9 /* Check Pods Manifest.lock */,
+				FBB2CA551C699A31004D17D3 /* Sources */,
+				FBB2CA561C699A31004D17D3 /* Frameworks */,
+				FBB2CA571C699A31004D17D3 /* Resources */,
+				FDA32356EF63F37AF43667A9 /* Embed Pods Frameworks */,
+				F6B163FCCA1E2AB0FA711ECF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C5313BAD1BFCCA5200CFA14F /* PBXTargetDependency */,
 			);
 			name = MetroTransit;
 			productName = MetroTransit;
-			productReference = C5313B591BFCC88E00CFA14F /* MetroTransit.app */;
+			productReference = FBB2CA591C699A31004D17D3 /* MetroTransit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FBE9267E1C698C66001C2078 /* MetroTransitTests */ = {
+		FBB2CA6F1C699A31004D17D3 /* MetroTransitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBE9268E1C698C67001C2078 /* Build configuration list for PBXNativeTarget "MetroTransitTests" */;
+			buildConfigurationList = FBB2CA871C699A31004D17D3 /* Build configuration list for PBXNativeTarget "MetroTransitTests" */;
 			buildPhases = (
-				FBE9267B1C698C66001C2078 /* Sources */,
-				FBE9267C1C698C66001C2078 /* Frameworks */,
-				FBE9267D1C698C66001C2078 /* Resources */,
+				C158E3ECA6550BE840249922 /* Check Pods Manifest.lock */,
+				FBB2CA6C1C699A31004D17D3 /* Sources */,
+				FBB2CA6D1C699A31004D17D3 /* Frameworks */,
+				FBB2CA6E1C699A31004D17D3 /* Resources */,
+				69908DA18C0FB4770DDCE6BE /* Embed Pods Frameworks */,
+				E236D0CC911C32EA7551C4D6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FBE926851C698C67001C2078 /* PBXTargetDependency */,
+				FBB2CA721C699A31004D17D3 /* PBXTargetDependency */,
 			);
 			name = MetroTransitTests;
 			productName = MetroTransitTests;
-			productReference = FBE9267F1C698C66001C2078 /* MetroTransitTests.xctest */;
+			productReference = FBB2CA701C699A31004D17D3 /* MetroTransitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBB2CA7A1C699A31004D17D3 /* MetroTransitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB2CA8A1C699A31004D17D3 /* Build configuration list for PBXNativeTarget "MetroTransitUITests" */;
+			buildPhases = (
+				FBB2CA771C699A31004D17D3 /* Sources */,
+				FBB2CA781C699A31004D17D3 /* Frameworks */,
+				FBB2CA791C699A31004D17D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBB2CA7D1C699A31004D17D3 /* PBXTargetDependency */,
+			);
+			name = MetroTransitUITests;
+			productName = MetroTransitUITests;
+			productReference = FBB2CA7B1C699A31004D17D3 /* MetroTransitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C5313B511BFCC88E00CFA14F /* Project object */ = {
+		FBB2CA511C699A31004D17D3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Brandon Jenniges";
 				TargetAttributes = {
-					C5313B581BFCC88E00CFA14F = {
-						CreatedOnToolsVersion = 7.1.1;
-					};
-					FBE9267E1C698C66001C2078 = {
+					FBB2CA581C699A31004D17D3 = {
 						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = C5313B581BFCC88E00CFA14F;
+					};
+					FBB2CA6F1C699A31004D17D3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FBB2CA581C699A31004D17D3;
+					};
+					FBB2CA7A1C699A31004D17D3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FBB2CA581C699A31004D17D3;
 					};
 				};
 			};
-			buildConfigurationList = C5313B541BFCC88E00CFA14F /* Build configuration list for PBXProject "MetroTransit" */;
+			buildConfigurationList = FBB2CA541C699A31004D17D3 /* Build configuration list for PBXProject "MetroTransit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -352,87 +350,37 @@
 				en,
 				Base,
 			);
-			mainGroup = C5313B501BFCC88E00CFA14F;
-			productRefGroup = C5313B5A1BFCC88E00CFA14F /* Products */;
+			mainGroup = FBB2CA501C699A31004D17D3;
+			productRefGroup = FBB2CA5A1C699A31004D17D3 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C5313B931BFCC9DF00CFA14F /* Products */;
-					ProjectRef = C5313B921BFCC9DF00CFA14F /* Alamofire.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				C5313B581BFCC88E00CFA14F /* MetroTransit */,
-				FBE9267E1C698C66001C2078 /* MetroTransitTests */,
+				FBB2CA581C699A31004D17D3 /* MetroTransit */,
+				FBB2CA6F1C699A31004D17D3 /* MetroTransitTests */,
+				FBB2CA7A1C699A31004D17D3 /* MetroTransitUITests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		C5313B9D1BFCC9DF00CFA14F /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = C5313B9C1BFCC9DF00CFA14F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C5313B9F1BFCC9DF00CFA14F /* Alamofire iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire iOS Tests.xctest";
-			remoteRef = C5313B9E1BFCC9DF00CFA14F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C5313BA11BFCC9DF00CFA14F /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = C5313BA01BFCC9DF00CFA14F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C5313BA31BFCC9DF00CFA14F /* Alamofire OSX Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire OSX Tests.xctest";
-			remoteRef = C5313BA21BFCC9DF00CFA14F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C5313BA51BFCC9DF00CFA14F /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = C5313BA41BFCC9DF00CFA14F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C5313BA71BFCC9DF00CFA14F /* Alamofire tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire tvOS Tests.xctest";
-			remoteRef = C5313BA61BFCC9DF00CFA14F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C5313BA91BFCC9DF00CFA14F /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = C5313BA81BFCC9DF00CFA14F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		C5313B571BFCC88E00CFA14F /* Resources */ = {
+		FBB2CA571C699A31004D17D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5313B671BFCC88E00CFA14F /* LaunchScreen.storyboard in Resources */,
-				C5313B641BFCC88E00CFA14F /* Assets.xcassets in Resources */,
-				C5313B621BFCC88E00CFA14F /* Main.storyboard in Resources */,
+				FBB2CA6A1C699A31004D17D3 /* LaunchScreen.storyboard in Resources */,
+				FBB2CA671C699A31004D17D3 /* Assets.xcassets in Resources */,
+				FBB2CA621C699A31004D17D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBE9267D1C698C66001C2078 /* Resources */ = {
+		FBB2CA6E1C699A31004D17D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB2CA791C699A31004D17D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -441,80 +389,181 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69908DA18C0FB4770DDCE6BE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetroTransitTests/Pods-MetroTransitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C158E3ECA6550BE840249922 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA37B9C3144877EDB76D45C9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E236D0CC911C32EA7551C4D6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetroTransitTests/Pods-MetroTransitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6B163FCCA1E2AB0FA711ECF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetroTransit/Pods-MetroTransit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDA32356EF63F37AF43667A9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetroTransit/Pods-MetroTransit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		C5313B551BFCC88E00CFA14F /* Sources */ = {
+		FBB2CA551C699A31004D17D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C59C721A1C038817004114F9 /* Provider+CoreDataProperties.swift in Sources */,
-				C5313B5F1BFCC88E00CFA14F /* ProvidersViewController.swift in Sources */,
-				C509EB321C03879F009FDD2F /* Stop+CoreDataProperties.swift in Sources */,
-				C509EB331C03879F009FDD2F /* Stop.swift in Sources */,
-				C59C721B1C038817004114F9 /* Route+CoreDataProperties.swift in Sources */,
-				C59C72191C038817004114F9 /* Direction+CoreDataProperties.swift in Sources */,
-				C5313B5D1BFCC88E00CFA14F /* AppDelegate.swift in Sources */,
-				C5841F0F1BFFAE5E00DF5CF0 /* Provider.swift in Sources */,
-				C509EB361C03879F009FDD2F /* VehicleLocation.swift in Sources */,
-				C509EB281C0384D7009FDD2F /* Direction.swift in Sources */,
-				C5A49A871C03634100F4C1CA /* Route.swift in Sources */,
-				FB6864D01C2281A5008E485A /* UserAnnotation.swift in Sources */,
-				C59C72201C04B1B9004114F9 /* VehiclesViewController.swift in Sources */,
-				C5A49A7D1C0362D400F4C1CA /* RoutesViewController.swift in Sources */,
-				C59C721D1C039DFB004114F9 /* StopsViewController.swift in Sources */,
-				C509EB1A1C03846C009FDD2F /* DirectionsViewController.swift in Sources */,
-				C5CF29E91C18DC8B00EB2320 /* VehicleAnnotation.swift in Sources */,
-				C5313BD21BFCCE4B00CFA14F /* MetroAPI.xcdatamodeld in Sources */,
-				C509EB351C03879F009FDD2F /* VehicleLocation+CoreDataProperties.swift in Sources */,
+				FB39EBCB1C699B71009D8B95 /* VehiclesViewController.swift in Sources */,
+				FB39EBC11C699B71009D8B95 /* Route.swift in Sources */,
+				FB39EBBC1C699B71009D8B95 /* Direction+CoreDataProperties.swift in Sources */,
+				FB39EBC61C699B71009D8B95 /* ProvidersViewController.swift in Sources */,
+				FB39EBC71C699B71009D8B95 /* RoutesViewController.swift in Sources */,
+				FB39EBBF1C699B71009D8B95 /* Provider.swift in Sources */,
+				FB39EBC91C699B71009D8B95 /* UserAnnotation.swift in Sources */,
+				FB39EBC01C699B71009D8B95 /* Route+CoreDataProperties.swift in Sources */,
+				FB39EBBE1C699B71009D8B95 /* Provider+CoreDataProperties.swift in Sources */,
+				FB39EBC51C699B71009D8B95 /* VehicleLocation.swift in Sources */,
+				FB39EBBB1C699B71009D8B95 /* DirectionsViewController.swift in Sources */,
+				FB39EBC41C699B71009D8B95 /* VehicleLocation+CoreDataProperties.swift in Sources */,
+				FB39EBC31C699B71009D8B95 /* Stop.swift in Sources */,
+				FB39EBC81C699B71009D8B95 /* StopsViewController.swift in Sources */,
+				FB39EBBD1C699B71009D8B95 /* Direction.swift in Sources */,
+				FB39EBCA1C699B71009D8B95 /* VehicleAnnotation.swift in Sources */,
+				FB39EBCE1C699BDC009D8B95 /* MetroAPI.xcdatamodeld in Sources */,
+				FBB2CA5D1C699A31004D17D3 /* AppDelegate.swift in Sources */,
+				FB39EBC21C699B71009D8B95 /* Stop+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBE9267B1C698C66001C2078 /* Sources */ = {
+		FBB2CA6C1C699A31004D17D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE9269E1C698EE5001C2078 /* ProviderTests.swift in Sources */,
-				FBE926A61C698EE5001C2078 /* VehicleAnnotationTests.swift in Sources */,
-				FBE926A21C698EE5001C2078 /* ProvidersViewControllerTests.swift in Sources */,
-				FBE926A71C698EE5001C2078 /* VehiclesViewControllerTests.swift in Sources */,
-				FBE9269F1C698EE5001C2078 /* RouteTests.swift in Sources */,
-				FBE9269C1C698EE5001C2078 /* DirectionsViewControllerTests.swift in Sources */,
-				FBE926A41C698EE5001C2078 /* StopsViewControllerTests.swift in Sources */,
-				FBE926A51C698EE5001C2078 /* UserAnnotationTests.swift in Sources */,
-				FBE926A11C698EE5001C2078 /* VehicleLocationTests.swift in Sources */,
-				FBE926A01C698EE5001C2078 /* StopTests.swift in Sources */,
-				FBE926A31C698EE5001C2078 /* RoutesViewControllerTests.swift in Sources */,
-				FBE9269D1C698EE5001C2078 /* DirectionTests.swift in Sources */,
+				FB39EBDE1C699E5D009D8B95 /* ProviderTests.swift in Sources */,
+				FB39EBE61C699E5D009D8B95 /* VehicleAnnotationTests.swift in Sources */,
+				FB39EBE21C699E5D009D8B95 /* ProvidersViewControllerTests.swift in Sources */,
+				FB39EBE71C699E5D009D8B95 /* VehiclesViewControllerTests.swift in Sources */,
+				FB39EBDF1C699E5D009D8B95 /* RouteTests.swift in Sources */,
+				FB39EBDC1C699E5D009D8B95 /* DirectionsViewControllerTests.swift in Sources */,
+				FB39EBE41C699E5D009D8B95 /* StopsViewControllerTests.swift in Sources */,
+				FB39EBE51C699E5D009D8B95 /* UserAnnotationTests.swift in Sources */,
+				FB39EBE11C699E5D009D8B95 /* VehicleLocationTests.swift in Sources */,
+				FB39EBE01C699E5D009D8B95 /* StopTests.swift in Sources */,
+				FB39EBE31C699E5D009D8B95 /* RoutesViewControllerTests.swift in Sources */,
+				FB39EBDD1C699E5D009D8B95 /* DirectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB2CA771C699A31004D17D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB2CA801C699A31004D17D3 /* MetroTransitUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C5313BAD1BFCCA5200CFA14F /* PBXTargetDependency */ = {
+		FBB2CA721C699A31004D17D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Alamofire iOS";
-			targetProxy = C5313BAC1BFCCA5200CFA14F /* PBXContainerItemProxy */;
+			target = FBB2CA581C699A31004D17D3 /* MetroTransit */;
+			targetProxy = FBB2CA711C699A31004D17D3 /* PBXContainerItemProxy */;
 		};
-		FBE926851C698C67001C2078 /* PBXTargetDependency */ = {
+		FBB2CA7D1C699A31004D17D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C5313B581BFCC88E00CFA14F /* MetroTransit */;
-			targetProxy = FBE926841C698C67001C2078 /* PBXContainerItemProxy */;
+			target = FBB2CA581C699A31004D17D3 /* MetroTransit */;
+			targetProxy = FBB2CA7C1C699A31004D17D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C5313B601BFCC88E00CFA14F /* Main.storyboard */ = {
+		FBB2CA601C699A31004D17D3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C5313B611BFCC88E00CFA14F /* Base */,
+				FBB2CA611C699A31004D17D3 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C5313B651BFCC88E00CFA14F /* LaunchScreen.storyboard */ = {
+		FBB2CA681C699A31004D17D3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C5313B661BFCC88E00CFA14F /* Base */,
+				FBB2CA691C699A31004D17D3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -522,7 +571,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C5313B691BFCC88E00CFA14F /* Debug */ = {
+		FBB2CA821C699A31004D17D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -558,7 +607,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -566,7 +615,7 @@
 			};
 			name = Debug;
 		};
-		C5313B6A1BFCC88E00CFA14F /* Release */ = {
+		FBB2CA831C699A31004D17D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -596,46 +645,44 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		C5313B6C1BFCC88E00CFA14F /* Debug */ = {
+		FBB2CA851C699A31004D17D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D68035F2B9314E9DDC56E0 /* Pods-MetroTransit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MetroTransit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.brandonjenniges.MetroTransit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		C5313B6D1BFCC88E00CFA14F /* Release */ = {
+		FBB2CA861C699A31004D17D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7EC85033AFBC6BABFC1F613 /* Pods-MetroTransit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MetroTransit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.brandonjenniges.MetroTransit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		FBE926861C698C67001C2078 /* Debug */ = {
+		FBB2CA881C699A31004D17D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A08C3B33D8A0FF06B752F49 /* Pods-MetroTransitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MetroTransitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -644,13 +691,13 @@
 			};
 			name = Debug;
 		};
-		FBE926871C698C67001C2078 /* Release */ = {
+		FBB2CA891C699A31004D17D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 781C07B3BA0E753280F2F80B /* Pods-MetroTransitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MetroTransitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -658,49 +705,83 @@
 			};
 			name = Release;
 		};
+		FBB2CA8B1C699A31004D17D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MetroTransitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MetroTransit;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FBB2CA8C1C699A31004D17D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MetroTransitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MetroTransit;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C5313B541BFCC88E00CFA14F /* Build configuration list for PBXProject "MetroTransit" */ = {
+		FBB2CA541C699A31004D17D3 /* Build configuration list for PBXProject "MetroTransit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5313B691BFCC88E00CFA14F /* Debug */,
-				C5313B6A1BFCC88E00CFA14F /* Release */,
+				FBB2CA821C699A31004D17D3 /* Debug */,
+				FBB2CA831C699A31004D17D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C5313B6B1BFCC88E00CFA14F /* Build configuration list for PBXNativeTarget "MetroTransit" */ = {
+		FBB2CA841C699A31004D17D3 /* Build configuration list for PBXNativeTarget "MetroTransit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5313B6C1BFCC88E00CFA14F /* Debug */,
-				C5313B6D1BFCC88E00CFA14F /* Release */,
+				FBB2CA851C699A31004D17D3 /* Debug */,
+				FBB2CA861C699A31004D17D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBE9268E1C698C67001C2078 /* Build configuration list for PBXNativeTarget "MetroTransitTests" */ = {
+		FBB2CA871C699A31004D17D3 /* Build configuration list for PBXNativeTarget "MetroTransitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBE926861C698C67001C2078 /* Debug */,
-				FBE926871C698C67001C2078 /* Release */,
+				FBB2CA881C699A31004D17D3 /* Debug */,
+				FBB2CA891C699A31004D17D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB2CA8A1C699A31004D17D3 /* Build configuration list for PBXNativeTarget "MetroTransitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB2CA8B1C699A31004D17D3 /* Debug */,
+				FBB2CA8C1C699A31004D17D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C5313BD01BFCCE4B00CFA14F /* MetroAPI.xcdatamodeld */ = {
+		FB39EBCC1C699BDC009D8B95 /* MetroAPI.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C5313BD11BFCCE4B00CFA14F /* MetroAPI.xcdatamodel */,
+				FB39EBCD1C699BDC009D8B95 /* MetroAPI.xcdatamodel */,
 			);
-			currentVersion = C5313BD11BFCCE4B00CFA14F /* MetroAPI.xcdatamodel */;
+			currentVersion = FB39EBCD1C699BDC009D8B95 /* MetroAPI.xcdatamodel */;
 			path = MetroAPI.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = C5313B511BFCC88E00CFA14F /* Project object */;
+	rootObject = FBB2CA511C699A31004D17D3 /* Project object */;
 }

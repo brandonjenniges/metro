@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C5313B581BFCC88E00CFA14F"
+               BlueprintIdentifier = "FBB2CA581C699A31004D17D3"
                BuildableName = "MetroTransit.app"
                BlueprintName = "MetroTransit"
                ReferencedContainer = "container:MetroTransit.xcodeproj">
@@ -32,9 +32,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FBE9267E1C698C66001C2078"
+               BlueprintIdentifier = "FBB2CA6F1C699A31004D17D3"
                BuildableName = "MetroTransitTests.xctest"
                BlueprintName = "MetroTransitTests"
+               ReferencedContainer = "container:MetroTransit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FBB2CA7A1C699A31004D17D3"
+               BuildableName = "MetroTransitUITests.xctest"
+               BlueprintName = "MetroTransitUITests"
                ReferencedContainer = "container:MetroTransit.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5313B581BFCC88E00CFA14F"
+            BlueprintIdentifier = "FBB2CA581C699A31004D17D3"
             BuildableName = "MetroTransit.app"
             BlueprintName = "MetroTransit"
             ReferencedContainer = "container:MetroTransit.xcodeproj">
@@ -65,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5313B581BFCC88E00CFA14F"
+            BlueprintIdentifier = "FBB2CA581C699A31004D17D3"
             BuildableName = "MetroTransit.app"
             BlueprintName = "MetroTransit"
             ReferencedContainer = "container:MetroTransit.xcodeproj">
@@ -84,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5313B581BFCC88E00CFA14F"
+            BlueprintIdentifier = "FBB2CA581C699A31004D17D3"
             BuildableName = "MetroTransit.app"
             BlueprintName = "MetroTransit"
             ReferencedContainer = "container:MetroTransit.xcodeproj">
