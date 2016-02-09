@@ -1,0 +1,31 @@
+fastlane_version "1.51.0"
+
+platform :ios do
+
+  ############################## PRE ##############################
+
+  before_all do
+
+  end
+
+  ######################### PUBLIC LANES ##########################
+
+  lane :test do
+    scan(
+      scheme: "MetroTransit",
+      clean: true,
+      destination: "platform=iOS Simulator,name=iPhone 6,OS=9.2"
+    )
+  end
+
+  ############################# POST ##############################
+
+  after_all do |lane|
+
+  end
+
+  error do |lane, exception|
+    notification(message:"fastlane finished '#{lane}'") # Mac OS X Notification
+  end
+
+end

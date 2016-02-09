@@ -31,6 +31,7 @@
 		C5A49A871C03634100F4C1CA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49A851C03634100F4C1CA /* Route.swift */; };
 		C5CF29E91C18DC8B00EB2320 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF29E81C18DC8B00EB2320 /* VehicleAnnotation.swift */; };
 		FB6864D01C2281A5008E485A /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6864CF1C2281A5008E485A /* UserAnnotation.swift */; };
+		FBE926821C698C67001C2078 /* MetroTransitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE926811C698C67001C2078 /* MetroTransitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,13 @@
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
 		};
+		FBE926841C698C67001C2078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5313B511BFCC88E00CFA14F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5313B581BFCC88E00CFA14F;
+			remoteInfo = MetroTransit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -132,6 +140,9 @@
 		C5A49A851C03634100F4C1CA /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		C5CF29E81C18DC8B00EB2320 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
 		FB6864CF1C2281A5008E485A /* UserAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
+		FBE9267F1C698C66001C2078 /* MetroTransitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroTransitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE926811C698C67001C2078 /* MetroTransitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroTransitTests.swift; sourceTree = "<group>"; };
+		FBE926831C698C67001C2078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +154,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBE9267C1C698C66001C2078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -150,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				C5313B5B1BFCC88E00CFA14F /* MetroTransit */,
+				FBE926801C698C67001C2078 /* MetroTransitTests */,
 				C5313B5A1BFCC88E00CFA14F /* Products */,
 				C5313B921BFCC9DF00CFA14F /* Alamofire.xcodeproj */,
 			);
@@ -159,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				C5313B591BFCC88E00CFA14F /* MetroTransit.app */,
+				FBE9267F1C698C66001C2078 /* MetroTransitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,6 +235,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FBE926801C698C67001C2078 /* MetroTransitTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBE926811C698C67001C2078 /* MetroTransitTests.swift */,
+				FBE926831C698C67001C2078 /* Info.plist */,
+			);
+			path = MetroTransitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,18 +266,40 @@
 			productReference = C5313B591BFCC88E00CFA14F /* MetroTransit.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FBE9267E1C698C66001C2078 /* MetroTransitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE9268E1C698C67001C2078 /* Build configuration list for PBXNativeTarget "MetroTransitTests" */;
+			buildPhases = (
+				FBE9267B1C698C66001C2078 /* Sources */,
+				FBE9267C1C698C66001C2078 /* Frameworks */,
+				FBE9267D1C698C66001C2078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBE926851C698C67001C2078 /* PBXTargetDependency */,
+			);
+			name = MetroTransitTests;
+			productName = MetroTransitTests;
+			productReference = FBE9267F1C698C66001C2078 /* MetroTransitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C5313B511BFCC88E00CFA14F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Brandon Jenniges";
 				TargetAttributes = {
 					C5313B581BFCC88E00CFA14F = {
 						CreatedOnToolsVersion = 7.1.1;
+					};
+					FBE9267E1C698C66001C2078 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C5313B581BFCC88E00CFA14F;
 					};
 				};
 			};
@@ -272,6 +323,7 @@
 			projectRoot = "";
 			targets = (
 				C5313B581BFCC88E00CFA14F /* MetroTransit */,
+				FBE9267E1C698C66001C2078 /* MetroTransitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -339,6 +391,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBE9267D1C698C66001C2078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -368,6 +427,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBE9267B1C698C66001C2078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE926821C698C67001C2078 /* MetroTransitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -375,6 +442,11 @@
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
 			targetProxy = C5313BAC1BFCCA5200CFA14F /* PBXContainerItemProxy */;
+		};
+		FBE926851C698C67001C2078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5313B581BFCC88E00CFA14F /* MetroTransit */;
+			targetProxy = FBE926841C698C67001C2078 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -505,6 +577,32 @@
 			};
 			name = Release;
 		};
+		FBE926861C698C67001C2078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MetroTransitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetroTransit.app/MetroTransit";
+			};
+			name = Debug;
+		};
+		FBE926871C698C67001C2078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MetroTransitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetroTransit.app/MetroTransit";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -525,6 +623,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		FBE9268E1C698C67001C2078 /* Build configuration list for PBXNativeTarget "MetroTransitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE926861C698C67001C2078 /* Debug */,
+				FBE926871C698C67001C2078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
