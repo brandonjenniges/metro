@@ -1,8 +1,7 @@
 //
-//  Copyright © 2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2016 Brandon Jenniges. All rights reserved.
 //
 
-import Foundation
 import CoreData
 
 extension Direction {
