@@ -12,7 +12,7 @@ extension NSManagedObject {
     }
     
     static func getEntity(name: String) -> NSEntityDescription {
-        let entity = NSEntityDescription.entityForName(String(Direction), inManagedObjectContext: getManagedObjectContext())
+        let entity = NSEntityDescription.entityForName(name, inManagedObjectContext: getManagedObjectContext())
         return entity!
     }
 }

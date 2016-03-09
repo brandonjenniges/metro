@@ -11,40 +11,33 @@ extension Route {
     
     // MARK: - Core Data
     
-    static func insert(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> Route {
-        let entity = NSEntityDescription.entityForName("Route", inManagedObjectContext: managedObjectContext)
-        let route = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedObjectContext) as! Route
+    convenience init?(json: [String : AnyObject]) {
+        let entity = Route.getEntity(String(Route))
+        self.init(entity: entity, insertIntoManagedObjectContext: Route.getManagedObjectContext())
         
-        if let stringValue = attributes["Route"] as? String, let intValue = Int(stringValue) {
-            route.routeNumber = NSNumber(integer: intValue)
-        }
+        guard let routeNumberString = json["Route"] as? String, let routeNumberInt = Int(routeNumberString), let providerIdString = json["ProviderID"] as? String, let providerIdInt = Int(providerIdString), let routeName = json["Description"] as? String else { return nil }
         
-        if let stringValue = attributes["ProviderID"] as? String, let intValue = Int(stringValue) {
-            route.providerId = NSNumber(integer: intValue)
-        }
-        
-        route.name = attributes["Description"] as? String
-        return route
+        self.routeNumber = NSNumber(integer: routeNumberInt)
+        self.providerId = NSNumber(integer: providerIdInt)
+        self.name = routeName
     }
     
     // MARK: - Metro API
     
-    static func getRoutes(success onSuccess:(providers:[Route])->Void, failure onFailure:(providers:[Route], error:NSError?)->Void) {
+    static func getRoutes(complete complete:(routes:[Route]) -> Void) {
         Alamofire.request(.GET, "http://svc.metrotransit.org/NexTrip/Routes", parameters: ["format": "json"])
             .responseJSON { response in
                 debugPrint(response)
                 
                 var routes = [Route]()
-                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 if let JSON = response.result.value  as? [[String : AnyObject]] {
                     for item in JSON {
-                        let route = insert(item, managedObjectContext: appDelegate.managedObjectContext)
-                        routes.append(route)
+                        if let route = Route(json: item) {
+                            routes.append(route)
+                        }
                     }
-                    onSuccess(providers: routes)
-                } else {
-                    onFailure(providers: routes, error: nil)
                 }
+                complete(routes: routes)
         }
     }
     

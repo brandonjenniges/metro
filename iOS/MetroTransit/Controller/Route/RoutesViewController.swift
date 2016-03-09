@@ -37,13 +37,11 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func getRoutes() {
-        Route.getRoutes(success: { (routes) -> Void in
+        Route.getRoutes(complete: { (routes) -> Void in
             self.routes = routes
             self.displayRoutes = routes
             self.tableview.reloadData()
-            }) { (routes, error) -> Void in
-                
-        }
+            })
     }
     
     static func getViewController() -> RoutesViewController {
