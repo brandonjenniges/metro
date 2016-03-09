@@ -25,6 +25,9 @@
 		FB14BB971C8FC68F000D37C5 /* DirectionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14BB961C8FC68F000D37C5 /* DirectionsPresenter.swift */; };
 		FB14BB991C8FC6FA000D37C5 /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14BB981C8FC6FA000D37C5 /* DirectionsView.swift */; };
 		FB14BB9B1C8FCD24000D37C5 /* NSManagedObject+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14BB9A1C8FCD24000D37C5 /* NSManagedObject+Utility.swift */; };
+		FB14BB9D1C8FDF1B000D37C5 /* ProvidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14BB9C1C8FDF1B000D37C5 /* ProvidersView.swift */; };
+		FB14BB9F1C8FDF34000D37C5 /* ProvidersViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14BB9E1C8FDF34000D37C5 /* ProvidersViewController+UITableView.swift */; };
+		FB14BBA11C8FDF40000D37C5 /* ProvidersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14BBA01C8FDF40000D37C5 /* ProvidersPresenter.swift */; };
 		FB39EBBC1C699B71009D8B95 /* Direction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBAB1C699B71009D8B95 /* Direction+CoreDataProperties.swift */; };
 		FB39EBBD1C699B71009D8B95 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBAC1C699B71009D8B95 /* Direction.swift */; };
 		FB39EBBE1C699B71009D8B95 /* Provider+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBAD1C699B71009D8B95 /* Provider+CoreDataProperties.swift */; };
@@ -95,6 +98,9 @@
 		FB14BB961C8FC68F000D37C5 /* DirectionsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsPresenter.swift; sourceTree = "<group>"; };
 		FB14BB981C8FC6FA000D37C5 /* DirectionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
 		FB14BB9A1C8FCD24000D37C5 /* NSManagedObject+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Utility.swift"; sourceTree = "<group>"; };
+		FB14BB9C1C8FDF1B000D37C5 /* ProvidersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidersView.swift; sourceTree = "<group>"; };
+		FB14BB9E1C8FDF34000D37C5 /* ProvidersViewController+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProvidersViewController+UITableView.swift"; sourceTree = "<group>"; };
+		FB14BBA01C8FDF40000D37C5 /* ProvidersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidersPresenter.swift; sourceTree = "<group>"; };
 		FB39EBAB1C699B71009D8B95 /* Direction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Direction+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FB39EBAC1C699B71009D8B95 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		FB39EBAD1C699B71009D8B95 /* Provider+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Provider+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -193,10 +199,10 @@
 		FB14BB771C8FC421000D37C5 /* Direction */ = {
 			isa = PBXGroup;
 			children = (
-				FB14BB781C8FC421000D37C5 /* DirectionsViewController.swift */,
-				FB14BB941C8FC629000D37C5 /* DirectionsViewController+UITableView.swift */,
 				FB14BB961C8FC68F000D37C5 /* DirectionsPresenter.swift */,
 				FB14BB981C8FC6FA000D37C5 /* DirectionsView.swift */,
+				FB14BB781C8FC421000D37C5 /* DirectionsViewController.swift */,
+				FB14BB941C8FC629000D37C5 /* DirectionsViewController+UITableView.swift */,
 			);
 			path = Direction;
 			sourceTree = "<group>";
@@ -204,7 +210,10 @@
 		FB14BB791C8FC421000D37C5 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				FB14BBA01C8FDF40000D37C5 /* ProvidersPresenter.swift */,
+				FB14BB9C1C8FDF1B000D37C5 /* ProvidersView.swift */,
 				FB14BB7A1C8FC421000D37C5 /* ProvidersViewController.swift */,
+				FB14BB9E1C8FDF34000D37C5 /* ProvidersViewController+UITableView.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -563,16 +572,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB14BB8F1C8FC537000D37C5 /* Route+Methods.swift in Sources */,
+				FB14BB9F1C8FDF34000D37C5 /* ProvidersViewController+UITableView.swift in Sources */,
 				FB14BB951C8FC629000D37C5 /* DirectionsViewController+UITableView.swift in Sources */,
 				FB14BB891C8FC421000D37C5 /* VehiclesViewController.swift in Sources */,
 				FB39EBC11C699B71009D8B95 /* Route.swift in Sources */,
 				FB39EBBC1C699B71009D8B95 /* Direction+CoreDataProperties.swift in Sources */,
+				FB14BB9D1C8FDF1B000D37C5 /* ProvidersView.swift in Sources */,
 				FB39EBBF1C699B71009D8B95 /* Provider.swift in Sources */,
 				FB14BB841C8FC421000D37C5 /* ProvidersViewController.swift in Sources */,
 				FB14BB991C8FC6FA000D37C5 /* DirectionsView.swift in Sources */,
 				FB14BB851C8FC421000D37C5 /* RoutesViewController.swift in Sources */,
 				FB14BB931C8FC54C000D37C5 /* VehicleLocation+Methods.swift in Sources */,
 				FB14BB8B1C8FC46D000D37C5 /* Direction+Methods.swift in Sources */,
+				FB14BBA11C8FDF40000D37C5 /* ProvidersPresenter.swift in Sources */,
 				FB14BB8D1C8FC4EC000D37C5 /* Provider+Methods.swift in Sources */,
 				FB39EBC01C699B71009D8B95 /* Route+CoreDataProperties.swift in Sources */,
 				FB14BB871C8FC421000D37C5 /* UserAnnotation.swift in Sources */,
