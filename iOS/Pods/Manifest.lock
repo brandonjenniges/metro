@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (3.2.1)
+  - OHHTTPStubs (4.7.1):
+    - OHHTTPStubs/Default (= 4.7.1)
+  - OHHTTPStubs/Core (4.7.1)
+  - OHHTTPStubs/Default (4.7.1):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (4.7.1):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (4.7.1):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (4.7.1)
+  - OHHTTPStubs/Swift (4.7.1):
+    - OHHTTPStubs/Core
+
+DEPENDENCIES:
+  - Alamofire (~> 3.2.1)
+  - OHHTTPStubs
+  - OHHTTPStubs/Swift
+
+SPEC CHECKSUMS:
+  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
+  OHHTTPStubs: f7d1604d04d37d055460c0ef9af01bb249ded0fa
+
+COCOAPODS: 0.39.0
