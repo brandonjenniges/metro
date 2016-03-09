@@ -28,7 +28,7 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == DirectionsViewController.segue {
             let viewController = segue.destinationViewController as! DirectionsViewController
-            viewController.route = displayRoutes[tableview.indexPathForSelectedRow!.row]
+            viewController.presenter = DirectionsPresenter(view: viewController, route: displayRoutes[tableview.indexPathForSelectedRow!.row])
         } else if segue.identifier == VehiclesViewController.segue {
             let viewController = segue.destinationViewController as! VehiclesViewController
             viewController.route = displayRoutes[tableview.indexPathForSelectedRow!.row]

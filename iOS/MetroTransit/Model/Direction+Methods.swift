@@ -12,40 +12,36 @@ extension Direction {
     
     // MARK: - Core Data
     
-    static func insert(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> Direction {
-        let entity = NSEntityDescription.entityForName("Direction", inManagedObjectContext: managedObjectContext)
-        let direction = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedObjectContext) as! Direction
+    convenience init?(json: [String : AnyObject]) {
+        let entity = Direction.getEntity(String(Direction))
+        self.init(entity: entity, insertIntoManagedObjectContext: Direction.getManagedObjectContext())
         
-        if let stringValue = attributes["Value"] as? String, let intValue = Int(stringValue) {
-            direction.value = NSNumber(integer: intValue)
-        }
+        guard let name = json["Text"] as? String, let stringValue = json["Value"] as? String, let value = Int(stringValue) else { return nil }
         
-        direction.name = attributes["Text"] as? String
-        return direction
+        self.name = name
+        self.value = NSNumber(integer: value)
     }
     
     // MARK: - Metro API
     
-    static func getDirections(route: Route, success onSuccess:(directions:[Direction])->Void, failure onFailure:(directions:[Direction], error:NSError?)->Void) {
+    static func get(route: Route, complete:(directions:[Direction]) -> Void) {
         Alamofire.request(.GET, "http://svc.metrotransit.org/NexTrip/Directions/\(route.routeNumber!)", parameters: ["format": "json"])
             .responseJSON { response in
                 debugPrint(response)
                 
                 var directions = [Direction]()
-                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 if let JSON = response.result.value  as? [[String : AnyObject]] {
                     for item in JSON {
-                        let direction = insert(item, managedObjectContext: appDelegate.managedObjectContext)
-                        directions.append(direction)
+                        if let direction = Direction(json: item) {
+                            directions.append(direction)
+                        }
                     }
-                    onSuccess(directions: directions)
-                } else {
-                    onFailure(directions: directions, error: nil)
                 }
+                complete(directions: directions)
         }
     }
     
-    // MARK : - Helper
+    // MARK: - Helper methods
     
     static func stringForDirection(direction: RouteDirection) -> String {
         switch direction {
