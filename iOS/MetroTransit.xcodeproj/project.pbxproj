@@ -241,6 +241,7 @@
 				FB39EBAC1C699B71009D8B95 /* Direction.swift */,
 				FB39EBAB1C699B71009D8B95 /* Direction+CoreDataProperties.swift */,
 				FB14BB8A1C8FC46D000D37C5 /* Direction+Methods.swift */,
+				FB14BB9A1C8FCD24000D37C5 /* NSManagedObject+Utility.swift */,
 				FB39EBAE1C699B71009D8B95 /* Provider.swift */,
 				FB39EBAD1C699B71009D8B95 /* Provider+CoreDataProperties.swift */,
 				FB14BB8C1C8FC4EC000D37C5 /* Provider+Methods.swift */,
@@ -250,10 +251,9 @@
 				FB39EBB21C699B71009D8B95 /* Stop.swift */,
 				FB39EBB11C699B71009D8B95 /* Stop+CoreDataProperties.swift */,
 				FB14BB901C8FC542000D37C5 /* Stop+Methods.swift */,
-				FB14BB921C8FC54C000D37C5 /* VehicleLocation+Methods.swift */,
 				FB39EBB41C699B71009D8B95 /* VehicleLocation.swift */,
 				FB39EBB31C699B71009D8B95 /* VehicleLocation+CoreDataProperties.swift */,
-				FB14BB9A1C8FCD24000D37C5 /* NSManagedObject+Utility.swift */,
+				FB14BB921C8FC54C000D37C5 /* VehicleLocation+Methods.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

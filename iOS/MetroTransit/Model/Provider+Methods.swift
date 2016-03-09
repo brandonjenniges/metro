@@ -13,7 +13,10 @@ extension Provider {
         let entity = Provider.getEntity(String(Provider))
         self.init(entity: entity, insertIntoManagedObjectContext: Provider.getManagedObjectContext())
         
-        guard let name = json["Text"] as? String, let stringValue = json["Value"] as? String, let value = Int(stringValue) else { return nil }
+        guard let name = json["Text"] as? String,
+            let stringValue = json["Value"] as? String,
+            let value = Int(stringValue)
+        else { return nil }
         
         self.text = name
         self.value = NSNumber(integer: value)

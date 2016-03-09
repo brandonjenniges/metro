@@ -47,7 +47,7 @@ class VehiclesViewController: UIViewController, MKMapViewDelegate, CLLocationMan
     }
     
     func refreshVehicleLocations() {
-        VehicleLocation.getVehicles(route, success: { (vehicles) -> Void in
+        VehicleLocation.get(route, complete: { (vehicles) -> Void in
             
             self.vehicles = vehicles
             for v in vehicles {
@@ -57,9 +57,7 @@ class VehiclesViewController: UIViewController, MKMapViewDelegate, CLLocationMan
             }
             self.mapView.showAnnotations(self.mapView.annotations, animated: true)
             
-            }) { (routes, error) -> Void in
-                
-        }
+            })
     }
     
     // MARK : - MKMapViewDelegate

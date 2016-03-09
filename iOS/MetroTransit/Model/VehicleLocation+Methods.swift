@@ -9,34 +9,37 @@ extension VehicleLocation {
     
     // MARK: - Core Data
     
-    static func insert(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> VehicleLocation {
-        let entity = NSEntityDescription.entityForName("VehicleLocation", inManagedObjectContext: managedObjectContext)
-        let vehicle = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedObjectContext) as! VehicleLocation
+    convenience init?(json: [String : AnyObject]) {
+        let entity = VehicleLocation.getEntity(String(VehicleLocation))
+        self.init(entity: entity, insertIntoManagedObjectContext: VehicleLocation.getManagedObjectContext())
         
-        vehicle.vehicleLatitude = attributes["VehicleLatitude"] as? NSNumber
-        vehicle.vehicleLongitude = attributes["VehicleLongitude"] as? NSNumber
-        vehicle.direction = attributes["Direction"] as? NSNumber
-        vehicle.terminal = attributes["Terminal"] as? String
-        return vehicle
+        guard let vehicleLatitude = json["VehicleLatitude"] as? NSNumber,
+            let vehicleLongitude = json["VehicleLongitude"] as? NSNumber,
+            let direction = json["Direction"] as? NSNumber,
+            let terminal = json["Terminal"] as? String
+        else { return nil }
+        
+        self.vehicleLatitude = vehicleLatitude
+        self.vehicleLongitude = vehicleLongitude
+        self.direction = direction
+        self.terminal = terminal
     }
     
     // MARK: - Metro API
     
-    static func getVehicles(route: Route, success onSuccess:(vehicles:[VehicleLocation])->Void, failure onFailure:(vehicles:[VehicleLocation], error:NSError?)->Void) {
+    static func get(route: Route, complete:(vehicles:[VehicleLocation]) -> Void) {
         Alamofire.request(.GET, "http://svc.metrotransit.org/NexTrip/VehicleLocations/\(route.routeNumber!)", parameters: ["format": "json"])
             .responseJSON { response in
                 debugPrint(response)
                 var vehicles = [VehicleLocation]()
-                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 if let JSON = response.result.value  as? [[String : AnyObject]] {
                     for item in JSON {
-                        let vehicle = insert(item, managedObjectContext: appDelegate.managedObjectContext)
-                        vehicles.append(vehicle)
+                        if let vehicle = VehicleLocation(json: item) {
+                            vehicles.append(vehicle)
+                        }
                     }
-                    onSuccess(vehicles: vehicles)
-                } else {
-                    onFailure(vehicles: vehicles, error: nil)
                 }
+                complete(vehicles: vehicles)
         }
     }
     

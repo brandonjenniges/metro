@@ -2,13 +2,12 @@
 //  Copyright © 2016 Brandon Jenniges. All rights reserved.
 //
 
-import Foundation
 import CoreData
 
 extension Stop {
 
     @NSManaged var name: String?
-    @NSManaged var value: NSNumber?
+    @NSManaged var value: String?
     @NSManaged var route: Direction?
 
 }

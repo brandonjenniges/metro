@@ -25,12 +25,10 @@ class StopsViewController: UIViewController, UITableViewDataSource {
     }
     
     func getStops() {
-        Stop.getStops(direction, success: { (routes) -> Void in
+        Stop.get(direction, complete: { (routes) -> Void in
             self.direction.stops = NSOrderedSet(array: routes)
             self.tableview.reloadData()
-            }) { (routes, error) -> Void in
-                
-        }
+            })
     }
     
     // MARK: - UITableview datasource

@@ -85,16 +85,14 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
         })
         
         let vehiclesAction = UIAlertAction(title: "Vehicles", style: .Default, handler: { (action: UIAlertAction) -> Void in
-            VehicleLocation.getVehicles(route, success: { (vehicles) -> Void in
+            VehicleLocation.get(route, complete: { (vehicles) -> Void in
                 self.vehicles = vehicles
                 if (vehicles.count > 0) {
                     self.performSegueWithIdentifier(VehiclesViewController.segue, sender: self)
                 } else {
                     self.alertNoVehicles(route)
                 }
-                }) { (routes, error) -> Void in
-                    
-            }
+                })
         })
         
         controller.addAction(directionsAction)
