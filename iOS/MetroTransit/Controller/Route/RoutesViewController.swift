@@ -5,17 +5,14 @@
 import UIKit
 import Alamofire
 
-class RoutesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+class RoutesViewController: UIViewController, RoutesView {
     
     @IBOutlet weak var tableview: UITableView!
-    
-    var routes = [Route]()
-    var displayRoutes = [Route]()
-    var vehicles = [VehicleLocation]()
+    var presenter: RoutesPresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getRoutes()
+        self.presenter = RoutesPresenter(view: self)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -28,56 +25,22 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == DirectionsViewController.segue {
             let viewController = segue.destinationViewController as! DirectionsViewController
-            viewController.presenter = DirectionsPresenter(view: viewController, route: displayRoutes[tableview.indexPathForSelectedRow!.row])
+            viewController.presenter = DirectionsPresenter(view: viewController, route: self.presenter.displayRoutes[tableview.indexPathForSelectedRow!.row])
         } else if segue.identifier == VehiclesViewController.segue {
             let viewController = segue.destinationViewController as! VehiclesViewController
-            viewController.route = displayRoutes[tableview.indexPathForSelectedRow!.row]
-            viewController.vehicles = self.vehicles
+            viewController.route = self.presenter.displayRoutes[tableview.indexPathForSelectedRow!.row]
+            viewController.vehicles = self.presenter.vehicles
         }
-    }
-    
-    func getRoutes() {
-        Route.getRoutes(complete: { (routes) -> Void in
-            self.routes = routes
-            self.displayRoutes = routes
-            self.tableview.reloadData()
-            })
     }
     
     static func getViewController() -> RoutesViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(String(RoutesViewController)) as! RoutesViewController
     }
     
-    // MARK : - UITableView datasource
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return displayRoutes.count
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let route = displayRoutes[indexPath.row]
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        cell.textLabel?.text = route.name!
-        return cell
-    }
-    
-    // MARK : - UITableView delegate
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        showScreenPicker()
-    }
-    
-    // MARK : - UISearchBar delegate
-    
-    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        self.displayRoutes = Route.getRoutesContainingName(searchText, routes: routes)
-        self.tableview.reloadData()
-    }
-    
     // MARK : - Screen
     
     func showScreenPicker() {
-        let route = displayRoutes[tableview.indexPathForSelectedRow!.row]
+        let route = self.presenter.displayRoutes[tableview.indexPathForSelectedRow!.row]
         let controller = UIAlertController(title: route.name, message: nil, preferredStyle: .ActionSheet)
         
         let directionsAction = UIAlertAction(title: "Directions", style: .Default, handler: { (action: UIAlertAction) -> Void in
@@ -86,7 +49,7 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
         
         let vehiclesAction = UIAlertAction(title: "Vehicles", style: .Default, handler: { (action: UIAlertAction) -> Void in
             VehicleLocation.get(route, complete: { (vehicles) -> Void in
-                self.vehicles = vehicles
+                self.presenter.vehicles = vehicles
                 if (vehicles.count > 0) {
                     self.performSegueWithIdentifier(VehiclesViewController.segue, sender: self)
                 } else {
@@ -112,5 +75,11 @@ class RoutesViewController: UIViewController, UITableViewDataSource, UITableView
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    // MARK: - Routes view
+    
+    func reload() {
+        self.tableview.reloadData()
     }
 }
