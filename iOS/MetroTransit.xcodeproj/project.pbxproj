@@ -32,6 +32,9 @@
 		FB14BBA51C8FE156000D37C5 /* RoutesViewController+UITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14BBA41C8FE156000D37C5 /* RoutesViewController+UITableViewController.swift */; };
 		FB14BBA71C8FE15B000D37C5 /* RoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14BBA61C8FE15B000D37C5 /* RoutesView.swift */; };
 		FB14BBA91C8FE293000D37C5 /* RoutesViewController+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14BBA81C8FE293000D37C5 /* RoutesViewController+UISearchBar.swift */; };
+		FB14BBAB1C8FE30A000D37C5 /* StopsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14BBAA1C8FE30A000D37C5 /* StopsPresenter.swift */; };
+		FB14BBAD1C8FE30F000D37C5 /* StopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14BBAC1C8FE30F000D37C5 /* StopsView.swift */; };
+		FB14BBAF1C8FE31E000D37C5 /* StopsViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14BBAE1C8FE31E000D37C5 /* StopsViewController+UITableView.swift */; };
 		FB39EBBC1C699B71009D8B95 /* Direction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBAB1C699B71009D8B95 /* Direction+CoreDataProperties.swift */; };
 		FB39EBBD1C699B71009D8B95 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBAC1C699B71009D8B95 /* Direction.swift */; };
 		FB39EBBE1C699B71009D8B95 /* Provider+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBAD1C699B71009D8B95 /* Provider+CoreDataProperties.swift */; };
@@ -109,6 +112,9 @@
 		FB14BBA41C8FE156000D37C5 /* RoutesViewController+UITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoutesViewController+UITableViewController.swift"; sourceTree = "<group>"; };
 		FB14BBA61C8FE15B000D37C5 /* RoutesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesView.swift; sourceTree = "<group>"; };
 		FB14BBA81C8FE293000D37C5 /* RoutesViewController+UISearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoutesViewController+UISearchBar.swift"; sourceTree = "<group>"; };
+		FB14BBAA1C8FE30A000D37C5 /* StopsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsPresenter.swift; sourceTree = "<group>"; };
+		FB14BBAC1C8FE30F000D37C5 /* StopsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsView.swift; sourceTree = "<group>"; };
+		FB14BBAE1C8FE31E000D37C5 /* StopsViewController+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StopsViewController+UITableView.swift"; sourceTree = "<group>"; };
 		FB39EBAB1C699B71009D8B95 /* Direction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Direction+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FB39EBAC1C699B71009D8B95 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		FB39EBAD1C699B71009D8B95 /* Provider+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Provider+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -232,8 +238,8 @@
 				FB14BBA21C8FE14A000D37C5 /* RoutesPresenter.swift */,
 				FB14BBA61C8FE15B000D37C5 /* RoutesView.swift */,
 				FB14BB7C1C8FC421000D37C5 /* RoutesViewController.swift */,
-				FB14BBA41C8FE156000D37C5 /* RoutesViewController+UITableViewController.swift */,
 				FB14BBA81C8FE293000D37C5 /* RoutesViewController+UISearchBar.swift */,
+				FB14BBA41C8FE156000D37C5 /* RoutesViewController+UITableViewController.swift */,
 			);
 			path = Route;
 			sourceTree = "<group>";
@@ -241,7 +247,10 @@
 		FB14BB7D1C8FC421000D37C5 /* Stop */ = {
 			isa = PBXGroup;
 			children = (
+				FB14BBAA1C8FE30A000D37C5 /* StopsPresenter.swift */,
+				FB14BBAC1C8FE30F000D37C5 /* StopsView.swift */,
 				FB14BB7E1C8FC421000D37C5 /* StopsViewController.swift */,
+				FB14BBAE1C8FE31E000D37C5 /* StopsViewController+UITableView.swift */,
 			);
 			path = Stop;
 			sourceTree = "<group>";
@@ -585,6 +594,7 @@
 			files = (
 				FB14BBA91C8FE293000D37C5 /* RoutesViewController+UISearchBar.swift in Sources */,
 				FB14BB8F1C8FC537000D37C5 /* Route+Methods.swift in Sources */,
+				FB14BBAD1C8FE30F000D37C5 /* StopsView.swift in Sources */,
 				FB14BB9F1C8FDF34000D37C5 /* ProvidersViewController+UITableView.swift in Sources */,
 				FB14BB951C8FC629000D37C5 /* DirectionsViewController+UITableView.swift in Sources */,
 				FB14BB891C8FC421000D37C5 /* VehiclesViewController.swift in Sources */,
@@ -615,8 +625,10 @@
 				FB14BB861C8FC421000D37C5 /* StopsViewController.swift in Sources */,
 				FBB2CA5D1C699A31004D17D3 /* AppDelegate.swift in Sources */,
 				FB14BB9B1C8FCD24000D37C5 /* NSManagedObject+Utility.swift in Sources */,
+				FB14BBAB1C8FE30A000D37C5 /* StopsPresenter.swift in Sources */,
 				FB14BB881C8FC421000D37C5 /* VehicleAnnotation.swift in Sources */,
 				FB14BB831C8FC421000D37C5 /* DirectionsViewController.swift in Sources */,
+				FB14BBAF1C8FE31E000D37C5 /* StopsViewController+UITableView.swift in Sources */,
 				FB39EBC21C699B71009D8B95 /* Stop+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

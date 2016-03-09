@@ -26,7 +26,8 @@ class DirectionsViewController: UIViewController, DirectionsView {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let viewController = segue.destinationViewController as! StopsViewController
-        viewController.direction = self.presenter.route.directions![tableview.indexPathForSelectedRow!.row] as! Direction
+        let direction = self.presenter.route.directions![tableview.indexPathForSelectedRow!.row] as! Direction
+        viewController.presenter = StopsPresenter(view: viewController, direction: direction)
     }
     
     // MARK: - Directions view
