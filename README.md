@@ -4,12 +4,12 @@
 
 An in development iOS application that utilizes the [NexTrip API](http://svc.metrotransit.org/). 
 
-Apps
+Versions
 --------------
 
-###[iOS](https://github.com/steveholt55/metro/tree/develop/iOS)
+####[iOS](https://github.com/steveholt55/metro/tree/master/iOS)
 
-###[Android](https://github.com/steveholt55/metro/tree/develop/android)
+####[Android](https://github.com/steveholt55/metro/tree/master/android)
 
 License
 ---------------
