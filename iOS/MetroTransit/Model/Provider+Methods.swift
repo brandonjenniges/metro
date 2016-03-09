@@ -9,36 +9,32 @@ extension Provider {
     
     // MARK: - Core Data
     
-    static func insert(attributes: [String : AnyObject], managedObjectContext:NSManagedObjectContext) -> Provider {
-        let entity = NSEntityDescription.entityForName("Provider", inManagedObjectContext: managedObjectContext)
-        let provider = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedObjectContext) as! Provider
+    convenience init?(json: [String : AnyObject]) {
+        let entity = Provider.getEntity(String(Provider))
+        self.init(entity: entity, insertIntoManagedObjectContext: Provider.getManagedObjectContext())
         
-        if let stringValue = attributes["Value"] as? String, let intValue = Int(stringValue) {
-            provider.value = NSNumber(integer: intValue)
-        }
+        guard let name = json["Text"] as? String, let stringValue = json["Value"] as? String, let value = Int(stringValue) else { return nil }
         
-        provider.text = attributes["Text"] as? String
-        return provider
+        self.text = name
+        self.value = NSNumber(integer: value)
     }
     
     // MARK: - Metro API
     
-    static func getProviders(success onSuccess:(providers:[Provider])->Void, failure onFailure:(providers:[Provider], error:NSError?)->Void) {
+    static func get(complete complete:(providers:[Provider]) -> Void) {
         Alamofire.request(.GET, "http://svc.metrotransit.org/NexTrip/Providers", parameters: ["format": "json"])
             .responseJSON { response in
                 debugPrint(response)
                 
                 var providers = [Provider]()
-                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 if let JSON = response.result.value  as? [[String : AnyObject]] {
                     for item in JSON {
-                        let provider = insert(item, managedObjectContext: appDelegate.managedObjectContext)
-                        providers.append(provider)
+                        if let provider = Provider(json: item) {
+                            providers.append(provider)
+                        }
                     }
-                    onSuccess(providers: providers)
-                } else {
-                    onFailure(providers: providers, error: nil)
                 }
+                complete(providers: providers)
         }
     }
     

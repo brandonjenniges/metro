@@ -1,5 +1,5 @@
 //
-//  Copyright © 2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2016 Brandon Jenniges. All rights reserved.
 //
 
 import UIKit
@@ -18,12 +18,10 @@ class ProvidersViewController: UIViewController, UITableViewDataSource {
     }
 
     func getProviders() {
-        Provider.getProviders(success: { (providers) -> Void in
+        Provider.get(complete: { (providers) -> Void in
             self.providers = providers
             self.tableview.reloadData()
-            }) { (providers, error) -> Void in
-                
-        }
+            })
     }
     
     // MARK: - UITableview datasource
