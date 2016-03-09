@@ -1,5 +1,5 @@
 //
-//  Copyright © 2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2016 Brandon Jenniges. All rights reserved.
 //
 
 import UIKit
@@ -13,6 +13,7 @@ class StopsViewController: UIViewController, StopsView {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = self.presenter.direction.name
+        self.presenter.getStops()
     }
     
     override func viewWillAppear(animated: Bool) {

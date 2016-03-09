@@ -13,7 +13,6 @@ class RoutesPresenter {
     
     required init(view: RoutesView) {
         self.view = view
-        getRoutes()
     }
     
     func getRoutes() {

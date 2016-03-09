@@ -12,7 +12,6 @@ class StopsPresenter {
     required init(view: StopsView, direction: Direction) {
         self.view = view
         self.direction = direction
-        getStops()
     }
     
     func getStops() {

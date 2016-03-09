@@ -1,10 +1,10 @@
 //
-//  Copyright © 2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2016 Brandon Jenniges. All rights reserved.
 //
 
 import MapKit
 
-class UserAnnotation: NSObject, MKAnnotation  {
+class UserAnnotation: NSObject, MKAnnotation {
 
     let title: String?
     var coordinate: CLLocationCoordinate2D

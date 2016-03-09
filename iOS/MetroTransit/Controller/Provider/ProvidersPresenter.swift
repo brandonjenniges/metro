@@ -11,7 +11,6 @@ class ProvidersPresenter {
     
     required init(view: ProvidersView) {
         self.view = view
-        getProviders()
     }
     
     func getProviders() {

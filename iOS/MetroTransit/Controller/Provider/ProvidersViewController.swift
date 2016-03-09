@@ -13,6 +13,7 @@ class ProvidersViewController: UIViewController, ProvidersView {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter = ProvidersPresenter(view: self)
+        self.presenter.getProviders()
     }
     
     // MARK: - Providers view

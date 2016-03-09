@@ -3,7 +3,6 @@
 //
 
 import Foundation
-import CoreLocation
 import MapKit
 
 class VehiclesPresenter {

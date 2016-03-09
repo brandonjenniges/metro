@@ -13,6 +13,7 @@ class RoutesViewController: UIViewController, RoutesView {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter = RoutesPresenter(view: self)
+        self.presenter.getRoutes()
     }
     
     override func viewWillAppear(animated: Bool) {
