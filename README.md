@@ -7,8 +7,9 @@ An in development iOS application that utilizes the [NexTrip API](http://svc.met
 Apps
 --------------
 
-[`iOS`](https://github.com/steveholt55/metro/iOS)
-[`Android`](https://github.com/steveholt55/metro/android)
+###[iOS](https://github.com/steveholt55/metro/tree/develop/iOS)
+
+###[Android](https://github.com/steveholt55/metro/tree/develop/android)
 
 License
 ---------------
