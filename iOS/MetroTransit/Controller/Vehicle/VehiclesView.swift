@@ -3,5 +3,7 @@
 //
 
 protocol VehiclesView: class {
-    
+    func addVehicleAnnotation(annotation: VehicleAnnotation)
+    func showVehicleAnnotations(annotations: [VehicleAnnotation])
+    func refreshVehicleAnnotations()
 }

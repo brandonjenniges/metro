@@ -60,6 +60,8 @@
 		FB39EBE51C699E5D009D8B95 /* UserAnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD91C699E5D009D8B95 /* UserAnnotationTests.swift */; };
 		FB39EBE61C699E5D009D8B95 /* VehicleAnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBDA1C699E5D009D8B95 /* VehicleAnnotationTests.swift */; };
 		FB39EBE71C699E5D009D8B95 /* VehiclesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBDB1C699E5D009D8B95 /* VehiclesViewControllerTests.swift */; };
+		FB936E041C908CC3008C7DDA /* VehiclesViewController+CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB936E031C908CC3008C7DDA /* VehiclesViewController+CoreLocation.swift */; };
+		FB936E061C908CD2008C7DDA /* VehiclesViewController+MapKit in Sources */ = {isa = PBXBuildFile; fileRef = FB936E051C908CD2008C7DDA /* VehiclesViewController+MapKit */; };
 		FBB2CA5D1C699A31004D17D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2CA5C1C699A31004D17D3 /* AppDelegate.swift */; };
 		FBB2CA621C699A31004D17D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB2CA601C699A31004D17D3 /* Main.storyboard */; };
 		FBB2CA671C699A31004D17D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB2CA661C699A31004D17D3 /* Assets.xcassets */; };
@@ -142,6 +144,8 @@
 		FB39EBD91C699E5D009D8B95 /* UserAnnotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAnnotationTests.swift; sourceTree = "<group>"; };
 		FB39EBDA1C699E5D009D8B95 /* VehicleAnnotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleAnnotationTests.swift; sourceTree = "<group>"; };
 		FB39EBDB1C699E5D009D8B95 /* VehiclesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesViewControllerTests.swift; sourceTree = "<group>"; };
+		FB936E031C908CC3008C7DDA /* VehiclesViewController+CoreLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VehiclesViewController+CoreLocation.swift"; sourceTree = "<group>"; };
+		FB936E051C908CD2008C7DDA /* VehiclesViewController+MapKit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "VehiclesViewController+MapKit"; sourceTree = "<group>"; };
 		FBB2CA591C699A31004D17D3 /* MetroTransit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB2CA5C1C699A31004D17D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB2CA611C699A31004D17D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -267,6 +271,8 @@
 				FB14BBB01C8FE4CC000D37C5 /* VehiclesPresenter.swift */,
 				FB14BBB21C8FE4D2000D37C5 /* VehiclesView.swift */,
 				FB14BB821C8FC421000D37C5 /* VehiclesViewController.swift */,
+				FB936E031C908CC3008C7DDA /* VehiclesViewController+CoreLocation.swift */,
+				FB936E051C908CD2008C7DDA /* VehiclesViewController+MapKit */,
 			);
 			path = Vehicle;
 			sourceTree = "<group>";
@@ -615,6 +621,7 @@
 				FB14BBA31C8FE14A000D37C5 /* RoutesPresenter.swift in Sources */,
 				FB14BB851C8FC421000D37C5 /* RoutesViewController.swift in Sources */,
 				FB14BB931C8FC54C000D37C5 /* VehicleLocation+Methods.swift in Sources */,
+				FB936E061C908CD2008C7DDA /* VehiclesViewController+MapKit in Sources */,
 				FB14BBB11C8FE4CC000D37C5 /* VehiclesPresenter.swift in Sources */,
 				FB14BB8B1C8FC46D000D37C5 /* Direction+Methods.swift in Sources */,
 				FB14BBA11C8FDF40000D37C5 /* ProvidersPresenter.swift in Sources */,
@@ -626,6 +633,7 @@
 				FB39EBC51C699B71009D8B95 /* VehicleLocation.swift in Sources */,
 				FB14BB911C8FC542000D37C5 /* Stop+Methods.swift in Sources */,
 				FB14BBB31C8FE4D2000D37C5 /* VehiclesView.swift in Sources */,
+				FB936E041C908CC3008C7DDA /* VehiclesViewController+CoreLocation.swift in Sources */,
 				FB39EBC41C699B71009D8B95 /* VehicleLocation+CoreDataProperties.swift in Sources */,
 				FB39EBC31C699B71009D8B95 /* Stop.swift in Sources */,
 				FB39EBBD1C699B71009D8B95 /* Direction.swift in Sources */,

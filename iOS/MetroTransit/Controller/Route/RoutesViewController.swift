@@ -1,5 +1,5 @@
 //
-//  Copyright © 2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2016 Brandon Jenniges. All rights reserved.
 //
 
 import UIKit
@@ -28,8 +28,9 @@ class RoutesViewController: UIViewController, RoutesView {
             viewController.presenter = DirectionsPresenter(view: viewController, route: self.presenter.displayRoutes[tableview.indexPathForSelectedRow!.row])
         } else if segue.identifier == VehiclesViewController.segue {
             let viewController = segue.destinationViewController as! VehiclesViewController
-            viewController.route = self.presenter.displayRoutes[tableview.indexPathForSelectedRow!.row]
-            viewController.vehicles = self.presenter.vehicles
+            let route = self.presenter.displayRoutes[tableview.indexPathForSelectedRow!.row]
+            let vehicles = self.presenter.vehicles
+            viewController.presenter = VehiclesPresenter(view: viewController, route: route, vehicles: vehicles)
         }
     }
     
