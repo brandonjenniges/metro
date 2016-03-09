@@ -15,57 +15,57 @@
 		380D45B66CEDF2C64EADA916FD9FFE43 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9890BF82D0060089E5BBB80D3C9210CE /* OHHTTPStubs+NSURLSessionConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3EA8F215C9C1432D74E5CCA4834AA8C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939051E278D8F55B3F937127D44A2B65 /* ResponseSerialization.swift */; };
 		4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A11D800FBCAC76FDC1CAE162EE10A23 /* Manager.swift */; };
-		46C43DA3AD744FE1FE513CBD273F5553 /* Pods-MetroTransitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A11D0D27EDEAC319C70F689B1F64E720 /* Pods-MetroTransitTests-dummy.m */; };
+		4CD8402DC61BB153792527995A9B201E /* Pods-MetroTransit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9C4CF55C2C2CEE11558A376CDDCD3A /* Pods-MetroTransit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1C8E253BC02CE2F3791AEE3BA1725F /* Upload.swift */; };
 		5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449A292D2B952449A93EB5902F380E86 /* Download.swift */; };
 		62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3C46ED32EE8CF37E4FEDEA9D5E133A /* Response.swift */; };
 		648A315E6C4EDA19D909DE6FD58B9ACD /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62901B4D55012ABB7CCE3DA78C95C404 /* OHHTTPStubsSwift.swift */; };
 		70E45A9870C463BDEFD7019F5FF32D03 /* OHHTTPStubsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ED8CAA4030D9891335CB90AF64C3CB3 /* OHHTTPStubsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70E85D464C17C6C64FA8C141052A6BC3 /* Pods-MetroTransitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A11D0D27EDEAC319C70F689B1F64E720 /* Pods-MetroTransitTests-dummy.m */; };
 		7295F4E873343EADA45624FBE94D2F74 /* OHHTTPStubsResponse+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = AE6E1C3A78224694882AA78E5F3E48F8 /* OHHTTPStubsResponse+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5CFA1FEBB7296AF8BD2CE6F59AABE4 /* ServerTrustPolicy.swift */; };
-		81349AA6C8971391589FD0E8F7A86762 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1830145CF1F6809BE1B3D5F36CCC2BC2 /* Foundation.framework */; };
 		8D4026CE7290B3A91C1E74A8AB3ACD1E /* OHHTTPStubs.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA300BFB66BD2598AE3A2486517CA3D /* OHHTTPStubs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF717C56D9247C435B07ED6EB693CFD8 /* Alamofire.swift */; };
-		91EBB2D073BEA04F29DC4353FAC2852E /* Pods-MetroTransit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E6EA8512545A84C877E782ED52ECB4 /* Pods-MetroTransit-dummy.m */; };
+		920A9DAC68C0B75470874BD6A51EDC1A /* Pods-MetroTransitTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5FF2796A37CA1F0C0F8352639DA62B9 /* Pods-MetroTransitTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		929644D01D7952939A64447827EBA50A /* OHHTTPStubs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9608A92774F00B1CA92AE4768909B48 /* OHHTTPStubs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3997597D71BBAAA1AEACEFFE0A1E19 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99550581518FED251FF606E8DC635BC4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BD1DE0DAC7AF9BD8C1EA3758E5F3AC /* CFNetwork.framework */; };
-		9B3E12906EDD5D3D5605D1A7469A1043 /* Pods-MetroTransit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9C4CF55C2C2CEE11558A376CDDCD3A /* Pods-MetroTransit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F4FF64327F8D3383BB7DEAC7EEA9FB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1830145CF1F6809BE1B3D5F36CCC2BC2 /* Foundation.framework */; };
 		A0549B4638502D692CDC0A595001238C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1830145CF1F6809BE1B3D5F36CCC2BC2 /* Foundation.framework */; };
+		A111EE1BA886BFBA497EBAF41C7938D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1830145CF1F6809BE1B3D5F36CCC2BC2 /* Foundation.framework */; };
 		AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248E08D89F0F09A3478565D25F10BFB /* Result.swift */; };
 		ADF19C953CE2A7D0B72EC93A81FCCC26 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD38A8983430902A071AA7384AD5600 /* Alamofire-dummy.m */; };
 		AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C81BDF897F5A28B1A8A36F69696427 /* Stream.swift */; };
 		B8627D6566F2824244EC8E30650BCF42 /* OHPathHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 508EEC892FBD960DD668ADAFC82F932C /* OHPathHelpers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		BE41196F6A3903E59C3306FE3F8B43FE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965327EB7A5EC26B1815BA5EC3C88CE9 /* Notifications.swift */; };
+		BEB0C44646C67501015901FCCBB82F78 /* Pods-MetroTransit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E6EA8512545A84C877E782ED52ECB4 /* Pods-MetroTransit-dummy.m */; };
 		C0DB70AB368765DC64BFB5FEA75E0696 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B13E8122021C673AAACFE0EB309441 /* ParameterEncoding.swift */; };
 		C53878D8B8DACC3BF70462645B620449 /* OHHTTPStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = 5812AA136A5A863016167B99556D321B /* OHHTTPStubs.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		C7B6DD7C0456C50289A2C381DFE9FA3F /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDB0DE108A7E064D8C95F3ED5971CAA /* MultipartFormData.swift */; };
-		CCE6C3A4D191A093C9B39096DC550B83 /* Pods-MetroTransitTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5FF2796A37CA1F0C0F8352639DA62B9 /* Pods-MetroTransitTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3D17BC19B8C3D09FE41A160620882B3 /* OHHTTPStubsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9117514B83948189991A919DC6B2CA9F /* OHHTTPStubsResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E55A2EEF04662CB1628DA5754F2A4157 /* Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 63EB585159E5324211EF839D7F73A121 /* Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB2B3486C424283C026551BF6939A50A /* OHHTTPStubsResponse+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 076913100A83F46BD8C16971EB7BE9B4 /* OHHTTPStubsResponse+JSON.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		EFE92E8D3813DD26E78E93EEAF6D7E7E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DE733466C2D72522F019730AC135D0 /* Request.swift */; };
-		F3BE21C74BFFCF9EB36638B9F7F3BE81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1830145CF1F6809BE1B3D5F36CCC2BC2 /* Foundation.framework */; };
 		F6E08E3ECF05C74C078724791DB78883 /* OHHTTPStubs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64539661E87BD36EDC373889275865F0 /* OHHTTPStubs-dummy.m */; };
 		F82198F34DD14753A42F4328CD5E7A6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1830145CF1F6809BE1B3D5F36CCC2BC2 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BCDCAEB44C7DFFF68D36BDB985C369DD /* PBXContainerItemProxy */ = {
+		0452E6E25856E5E12D7BDEAAD8E06B4C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
 			remoteInfo = Alamofire;
 		};
-		E3820ABDD9195FB29EF4C0160B7A13AF /* PBXContainerItemProxy */ = {
+		24E21032579DAEC90E0395AA8383F592 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 65068B06081E7C3728E201FD9DED25E5;
 			remoteInfo = OHHTTPStubs;
 		};
-		EB21C3D69D6C7A8138D197612DF5853E /* PBXContainerItemProxy */ = {
+		C410C2D56D951BC20742BA917F30941D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -145,6 +145,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		026DFC5BB6C7BC1244F7C4A21742594C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F4FF64327F8D3383BB7DEAC7EEA9FB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4169E5BA124E6BE2B63448FDE54E7089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A111EE1BA886BFBA497EBAF41C7938D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56F661CE286952FB71B51618A1CF7797 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,27 +170,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C90B47AB2F22978D411F8105252934A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3BE21C74BFFCF9EB36638B9F7F3BE81 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B1729F851F648EC60EE93CDB3C8BAEAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F82198F34DD14753A42F4328CD5E7A6B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5729134F2339054B49D1549FCDB33F9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81349AA6C8971391589FD0E8F7A86762 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +389,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2B9A940E9E7332F2B9FEE73223A89BF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				920A9DAC68C0B75470874BD6A51EDC1A /* Pods-MetroTransitTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A22D0DA84CBEBDE5237056528071993 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,19 +410,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A01688B71419E2D6734F9A7C96066B7B /* Headers */ = {
+		A8B202B119B81537FA9C1BA6ED247F72 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCE6C3A4D191A093C9B39096DC550B83 /* Pods-MetroTransitTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ECAD2558FB73ED2301D93A309569AC40 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B3E12906EDD5D3D5605D1A7469A1043 /* Pods-MetroTransit-umbrella.h in Headers */,
+				4CD8402DC61BB153792527995A9B201E /* Pods-MetroTransit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,25 +429,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2306C8A8E48FD35ABF7838967884E5A7 /* Pods-MetroTransitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D42D9D20834F3F1C952057397709716 /* Build configuration list for PBXNativeTarget "Pods-MetroTransitTests" */;
-			buildPhases = (
-				7F18584C7CFB60C12B975C9D697CAC60 /* Sources */,
-				8C90B47AB2F22978D411F8105252934A /* Frameworks */,
-				A01688B71419E2D6734F9A7C96066B7B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9968E2B8C6201C7D613D689831DFDA8E /* PBXTargetDependency */,
-				8F40B6AA7148FA02DD83D29BDAD9DB86 /* PBXTargetDependency */,
-			);
-			name = "Pods-MetroTransitTests";
-			productName = "Pods-MetroTransitTests";
-			productReference = D8FA1B3BBAD5F2A91CCE6F1F43F7618A /* Pods_MetroTransitTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		65068B06081E7C3728E201FD9DED25E5 /* OHHTTPStubs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38D76E32C9FC59C27FA720DE3F3F24BC /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */;
@@ -482,22 +463,41 @@
 			productReference = A0C11B8B8EFF1AD44A4A0DBFA95470F0 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		90547D546E0D1C94632FC753F79DF5E0 /* Pods-MetroTransit */ = {
+		A38BC652F35D615D38DC6B0896BE9185 /* Pods-MetroTransit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4588E37978F5116F1801A3F90D2BB07 /* Build configuration list for PBXNativeTarget "Pods-MetroTransit" */;
+			buildConfigurationList = 01E60A7CADE2EC72D799AC49559F9965 /* Build configuration list for PBXNativeTarget "Pods-MetroTransit" */;
 			buildPhases = (
-				EFC89AF83EFA3C1C9DDC66D784DB81B4 /* Sources */,
-				B5729134F2339054B49D1549FCDB33F9 /* Frameworks */,
-				ECAD2558FB73ED2301D93A309569AC40 /* Headers */,
+				F66A803E272D3F4DCC56A1C6710A1826 /* Sources */,
+				026DFC5BB6C7BC1244F7C4A21742594C /* Frameworks */,
+				A8B202B119B81537FA9C1BA6ED247F72 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				46D034DB41450F63C970DAD800DED9A7 /* PBXTargetDependency */,
+				160733352B0998B0394AA9B87676BBD9 /* PBXTargetDependency */,
+				C53F46E4B56EEA98B3DDC48F6D42E787 /* PBXTargetDependency */,
 			);
 			name = "Pods-MetroTransit";
 			productName = "Pods-MetroTransit";
 			productReference = 701E16DC4F24269D31899DDFF2867EA7 /* Pods_MetroTransit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF4A1872430BDFED7A7684361F06CC7D /* Pods-MetroTransitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA84E0DFFCCD7C5D1B545043B31549A7 /* Build configuration list for PBXNativeTarget "Pods-MetroTransitTests" */;
+			buildPhases = (
+				5855E270BBF7633ECA911A4240630C24 /* Sources */,
+				4169E5BA124E6BE2B63448FDE54E7089 /* Frameworks */,
+				2B9A940E9E7332F2B9FEE73223A89BF0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B57BED12A1DC2D7701FA01ED8FCCCA5B /* PBXTargetDependency */,
+			);
+			name = "Pods-MetroTransitTests";
+			productName = "Pods-MetroTransitTests";
+			productReference = D8FA1B3BBAD5F2A91CCE6F1F43F7618A /* Pods_MetroTransitTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -523,18 +523,18 @@
 			targets = (
 				79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */,
 				65068B06081E7C3728E201FD9DED25E5 /* OHHTTPStubs */,
-				90547D546E0D1C94632FC753F79DF5E0 /* Pods-MetroTransit */,
-				2306C8A8E48FD35ABF7838967884E5A7 /* Pods-MetroTransitTests */,
+				A38BC652F35D615D38DC6B0896BE9185 /* Pods-MetroTransit */,
+				FF4A1872430BDFED7A7684361F06CC7D /* Pods-MetroTransitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7F18584C7CFB60C12B975C9D697CAC60 /* Sources */ = {
+		5855E270BBF7633ECA911A4240630C24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46C43DA3AD744FE1FE513CBD273F5553 /* Pods-MetroTransitTests-dummy.m in Sources */,
+				70E85D464C17C6C64FA8C141052A6BC3 /* Pods-MetroTransitTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,34 +577,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFC89AF83EFA3C1C9DDC66D784DB81B4 /* Sources */ = {
+		F66A803E272D3F4DCC56A1C6710A1826 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91EBB2D073BEA04F29DC4353FAC2852E /* Pods-MetroTransit-dummy.m in Sources */,
+				BEB0C44646C67501015901FCCBB82F78 /* Pods-MetroTransit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		46D034DB41450F63C970DAD800DED9A7 /* PBXTargetDependency */ = {
+		160733352B0998B0394AA9B87676BBD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
-			targetProxy = BCDCAEB44C7DFFF68D36BDB985C369DD /* PBXContainerItemProxy */;
+			targetProxy = 0452E6E25856E5E12D7BDEAAD8E06B4C /* PBXContainerItemProxy */;
 		};
-		8F40B6AA7148FA02DD83D29BDAD9DB86 /* PBXTargetDependency */ = {
+		B57BED12A1DC2D7701FA01ED8FCCCA5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
+			targetProxy = C410C2D56D951BC20742BA917F30941D /* PBXContainerItemProxy */;
+		};
+		C53F46E4B56EEA98B3DDC48F6D42E787 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OHHTTPStubs;
 			target = 65068B06081E7C3728E201FD9DED25E5 /* OHHTTPStubs */;
-			targetProxy = E3820ABDD9195FB29EF4C0160B7A13AF /* PBXContainerItemProxy */;
-		};
-		9968E2B8C6201C7D613D689831DFDA8E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
-			targetProxy = EB21C3D69D6C7A8138D197612DF5853E /* PBXContainerItemProxy */;
+			targetProxy = 24E21032579DAEC90E0395AA8383F592 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -636,64 +636,7 @@
 			};
 			name = Release;
 		};
-		1AD6EDE3539299F9F1BD95C23FA20F8B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3D55E1A36AB335B5BC476A1E5DA044F /* Pods-MetroTransitTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MetroTransitTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MetroTransitTests/Pods-MetroTransitTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_MetroTransitTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		74F7FAC78E5CB4D327B99F47BF099326 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B22D7BBC1A0CF6643D51AC978AB19B33 /* Alamofire.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8E730325ADA00E6EB818FC7EE40089AD /* Release */ = {
+		47252E0007868AD9BA2823C9AA7219B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B001F9D8B94C2D324E20C1515112278 /* Pods-MetroTransit.release.xcconfig */;
 			buildSettings = {
@@ -722,6 +665,95 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		51359A1F8D0C08734D5E03AA3006B091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6DC9CAB4057F7D5FB044CC0603A368B /* Pods-MetroTransit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MetroTransit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MetroTransit/Pods-MetroTransit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MetroTransit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		74F7FAC78E5CB4D327B99F47BF099326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B22D7BBC1A0CF6643D51AC978AB19B33 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7D2A5197CDD63E9F3D21DBBBBD1E50DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB2D0580DC86FEA8E9B3DF957A77CB4 /* Pods-MetroTransitTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MetroTransitTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MetroTransitTests/Pods-MetroTransitTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MetroTransitTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		988C4F0A033BF086B4321BC9D9DED3EC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -790,6 +822,36 @@
 			};
 			name = Debug;
 		};
+		A90994EE35F67D2AD9BE35E85C9700B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3D55E1A36AB335B5BC476A1E5DA044F /* Pods-MetroTransitTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MetroTransitTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MetroTransitTests/Pods-MetroTransitTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MetroTransitTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C3746E36F91278C40D0DCBA78D124E88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B22D7BBC1A0CF6643D51AC978AB19B33 /* Alamofire.xcconfig */;
@@ -809,68 +871,6 @@
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D1DA209907FE56CA2AFDCCBE008E56EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6DC9CAB4057F7D5FB044CC0603A368B /* Pods-MetroTransit.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MetroTransit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MetroTransit/Pods-MetroTransit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_MetroTransit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F3415BD99EA3A12745998CD22AFC4E62 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFB2D0580DC86FEA8E9B3DF957A77CB4 /* Pods-MetroTransitTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MetroTransitTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MetroTransitTests/Pods-MetroTransitTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_MetroTransitTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -917,6 +917,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01E60A7CADE2EC72D799AC49559F9965 /* Build configuration list for PBXNativeTarget "Pods-MetroTransit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51359A1F8D0C08734D5E03AA3006B091 /* Debug */,
+				47252E0007868AD9BA2823C9AA7219B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -944,20 +953,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D42D9D20834F3F1C952057397709716 /* Build configuration list for PBXNativeTarget "Pods-MetroTransitTests" */ = {
+		BA84E0DFFCCD7C5D1B545043B31549A7 /* Build configuration list for PBXNativeTarget "Pods-MetroTransitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3415BD99EA3A12745998CD22AFC4E62 /* Debug */,
-				1AD6EDE3539299F9F1BD95C23FA20F8B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B4588E37978F5116F1801A3F90D2BB07 /* Build configuration list for PBXNativeTarget "Pods-MetroTransit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D1DA209907FE56CA2AFDCCBE008E56EB /* Debug */,
-				8E730325ADA00E6EB818FC7EE40089AD /* Release */,
+				7D2A5197CDD63E9F3D21DBBBBD1E50DE /* Debug */,
+				A90994EE35F67D2AD9BE35E85C9700B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

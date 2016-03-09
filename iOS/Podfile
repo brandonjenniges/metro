@@ -9,12 +9,10 @@ end
 
 target 'MetroTransit' do
     pod_afnetworking
-
-end
-
-target 'MetroTransitTests' do
-    pod_afnetworking
     pod 'OHHTTPStubs'
     pod 'OHHTTPStubs/Swift'
 end
 
+target 'MetroTransitTests' do
+    pod_afnetworking
+end

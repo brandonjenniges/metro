@@ -10,13 +10,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         return true
     }
     
     func applicationWillTerminate(application: UIApplication) {
         self.saveContext()
+    }
+    
+    static func isTesting() -> Bool {
+        if NSProcessInfo.processInfo().environment["XCInjectBundle"] != nil  || NSProcessInfo.processInfo().arguments.contains("testMode") {
+                return true
+        }
+        return false
     }
     
     // MARK: - Core Data stack

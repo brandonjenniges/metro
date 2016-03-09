@@ -48,25 +48,25 @@
 		FB39EBC41C699B71009D8B95 /* VehicleLocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBB31C699B71009D8B95 /* VehicleLocation+CoreDataProperties.swift */; };
 		FB39EBC51C699B71009D8B95 /* VehicleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBB41C699B71009D8B95 /* VehicleLocation.swift */; };
 		FB39EBCE1C699BDC009D8B95 /* MetroAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBCC1C699BDC009D8B95 /* MetroAPI.xcdatamodeld */; };
-		FB39EBDC1C699E5D009D8B95 /* DirectionsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBCF1C699E5D009D8B95 /* DirectionsViewControllerTests.swift */; };
 		FB39EBDD1C699E5D009D8B95 /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD11C699E5D009D8B95 /* DirectionTests.swift */; };
 		FB39EBDE1C699E5D009D8B95 /* ProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD21C699E5D009D8B95 /* ProviderTests.swift */; };
 		FB39EBDF1C699E5D009D8B95 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD31C699E5D009D8B95 /* RouteTests.swift */; };
 		FB39EBE01C699E5D009D8B95 /* StopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD41C699E5D009D8B95 /* StopTests.swift */; };
 		FB39EBE11C699E5D009D8B95 /* VehicleLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD51C699E5D009D8B95 /* VehicleLocationTests.swift */; };
-		FB39EBE21C699E5D009D8B95 /* ProvidersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD61C699E5D009D8B95 /* ProvidersViewControllerTests.swift */; };
-		FB39EBE31C699E5D009D8B95 /* RoutesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD71C699E5D009D8B95 /* RoutesViewControllerTests.swift */; };
-		FB39EBE41C699E5D009D8B95 /* StopsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD81C699E5D009D8B95 /* StopsViewControllerTests.swift */; };
-		FB39EBE51C699E5D009D8B95 /* UserAnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBD91C699E5D009D8B95 /* UserAnnotationTests.swift */; };
-		FB39EBE61C699E5D009D8B95 /* VehicleAnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBDA1C699E5D009D8B95 /* VehicleAnnotationTests.swift */; };
-		FB39EBE71C699E5D009D8B95 /* VehiclesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39EBDB1C699E5D009D8B95 /* VehiclesViewControllerTests.swift */; };
 		FB936E041C908CC3008C7DDA /* VehiclesViewController+CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB936E031C908CC3008C7DDA /* VehiclesViewController+CoreLocation.swift */; };
-		FB936E061C908CD2008C7DDA /* VehiclesViewController+MapKit in Sources */ = {isa = PBXBuildFile; fileRef = FB936E051C908CD2008C7DDA /* VehiclesViewController+MapKit */; };
+		FB936E061C908CD2008C7DDA /* VehiclesViewController+MapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB936E051C908CD2008C7DDA /* VehiclesViewController+MapKit.swift */; };
+		FB936E111C908FE7008C7DDA /* DirectionsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB936E081C908FE7008C7DDA /* DirectionsViewControllerTests.swift */; };
+		FB936E121C908FE7008C7DDA /* ProvidersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB936E091C908FE7008C7DDA /* ProvidersViewControllerTests.swift */; };
+		FB936E131C908FE7008C7DDA /* RoutesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB936E0A1C908FE7008C7DDA /* RoutesViewControllerTests.swift */; };
+		FB936E141C908FE7008C7DDA /* StopsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB936E0B1C908FE7008C7DDA /* StopsViewControllerTests.swift */; };
+		FB936E151C908FE7008C7DDA /* UserAnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB936E0C1C908FE7008C7DDA /* UserAnnotationTests.swift */; };
+		FB936E161C908FE7008C7DDA /* VehicleAnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB936E0D1C908FE7008C7DDA /* VehicleAnnotationTests.swift */; };
+		FB936E171C908FE7008C7DDA /* VehiclesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB936E0E1C908FE7008C7DDA /* VehiclesViewControllerTests.swift */; };
+		FB936E181C908FE7008C7DDA /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB936E101C908FE7008C7DDA /* routes.txt */; };
 		FBB2CA5D1C699A31004D17D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2CA5C1C699A31004D17D3 /* AppDelegate.swift */; };
 		FBB2CA621C699A31004D17D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB2CA601C699A31004D17D3 /* Main.storyboard */; };
 		FBB2CA671C699A31004D17D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB2CA661C699A31004D17D3 /* Assets.xcassets */; };
 		FBB2CA6A1C699A31004D17D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB2CA681C699A31004D17D3 /* LaunchScreen.storyboard */; };
-		FBB2CA801C699A31004D17D3 /* MetroTransitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2CA7F1C699A31004D17D3 /* MetroTransitUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,20 +77,16 @@
 			remoteGlobalIDString = FBB2CA581C699A31004D17D3;
 			remoteInfo = MetroTransit;
 		};
-		FBB2CA7C1C699A31004D17D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FBB2CA511C699A31004D17D3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FBB2CA581C699A31004D17D3;
-			remoteInfo = MetroTransit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		06D68035F2B9314E9DDC56E0 /* Pods-MetroTransit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroTransit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetroTransit/Pods-MetroTransit.debug.xcconfig"; sourceTree = "<group>"; };
+		28F1359F0C2A68EB8629FD03 /* Pods-MetroTransitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroTransitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetroTransitUITests/Pods-MetroTransitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A08C3B33D8A0FF06B752F49 /* Pods-MetroTransitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroTransitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetroTransitTests/Pods-MetroTransitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		717D58D3482AAE166D897ED7 /* Pods-MetroTransitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroTransitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetroTransitUITests/Pods-MetroTransitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		781C07B3BA0E753280F2F80B /* Pods-MetroTransitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroTransitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetroTransitTests/Pods-MetroTransitTests.release.xcconfig"; sourceTree = "<group>"; };
 		93D770E759B172C348A7B970 /* Pods_MetroTransitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetroTransitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E5BCD8E777F4540BF0D91C /* Pods_MetroTransitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetroTransitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF8000B9FE520985A25FFE8 /* Pods_MetroTransit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetroTransit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EC85033AFBC6BABFC1F613 /* Pods-MetroTransit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroTransit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetroTransit/Pods-MetroTransit.release.xcconfig"; sourceTree = "<group>"; };
 		FB14BB781C8FC421000D37C5 /* DirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
@@ -132,20 +128,21 @@
 		FB39EBB31C699B71009D8B95 /* VehicleLocation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VehicleLocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FB39EBB41C699B71009D8B95 /* VehicleLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleLocation.swift; sourceTree = "<group>"; };
 		FB39EBCD1C699BDC009D8B95 /* MetroAPI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MetroAPI.xcdatamodel; sourceTree = "<group>"; };
-		FB39EBCF1C699E5D009D8B95 /* DirectionsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewControllerTests.swift; sourceTree = "<group>"; };
 		FB39EBD11C699E5D009D8B95 /* DirectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
 		FB39EBD21C699E5D009D8B95 /* ProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderTests.swift; sourceTree = "<group>"; };
 		FB39EBD31C699E5D009D8B95 /* RouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTests.swift; sourceTree = "<group>"; };
 		FB39EBD41C699E5D009D8B95 /* StopTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTests.swift; sourceTree = "<group>"; };
 		FB39EBD51C699E5D009D8B95 /* VehicleLocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleLocationTests.swift; sourceTree = "<group>"; };
-		FB39EBD61C699E5D009D8B95 /* ProvidersViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidersViewControllerTests.swift; sourceTree = "<group>"; };
-		FB39EBD71C699E5D009D8B95 /* RoutesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesViewControllerTests.swift; sourceTree = "<group>"; };
-		FB39EBD81C699E5D009D8B95 /* StopsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsViewControllerTests.swift; sourceTree = "<group>"; };
-		FB39EBD91C699E5D009D8B95 /* UserAnnotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAnnotationTests.swift; sourceTree = "<group>"; };
-		FB39EBDA1C699E5D009D8B95 /* VehicleAnnotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleAnnotationTests.swift; sourceTree = "<group>"; };
-		FB39EBDB1C699E5D009D8B95 /* VehiclesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesViewControllerTests.swift; sourceTree = "<group>"; };
 		FB936E031C908CC3008C7DDA /* VehiclesViewController+CoreLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VehiclesViewController+CoreLocation.swift"; sourceTree = "<group>"; };
-		FB936E051C908CD2008C7DDA /* VehiclesViewController+MapKit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "VehiclesViewController+MapKit"; sourceTree = "<group>"; };
+		FB936E051C908CD2008C7DDA /* VehiclesViewController+MapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VehiclesViewController+MapKit.swift"; sourceTree = "<group>"; };
+		FB936E081C908FE7008C7DDA /* DirectionsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewControllerTests.swift; sourceTree = "<group>"; };
+		FB936E091C908FE7008C7DDA /* ProvidersViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidersViewControllerTests.swift; sourceTree = "<group>"; };
+		FB936E0A1C908FE7008C7DDA /* RoutesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesViewControllerTests.swift; sourceTree = "<group>"; };
+		FB936E0B1C908FE7008C7DDA /* StopsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsViewControllerTests.swift; sourceTree = "<group>"; };
+		FB936E0C1C908FE7008C7DDA /* UserAnnotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAnnotationTests.swift; sourceTree = "<group>"; };
+		FB936E0D1C908FE7008C7DDA /* VehicleAnnotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleAnnotationTests.swift; sourceTree = "<group>"; };
+		FB936E0E1C908FE7008C7DDA /* VehiclesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesViewControllerTests.swift; sourceTree = "<group>"; };
+		FB936E101C908FE7008C7DDA /* routes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routes.txt; sourceTree = "<group>"; };
 		FBB2CA591C699A31004D17D3 /* MetroTransit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB2CA5C1C699A31004D17D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB2CA611C699A31004D17D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -154,9 +151,6 @@
 		FBB2CA6B1C699A31004D17D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBB2CA701C699A31004D17D3 /* MetroTransitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroTransitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB2CA761C699A31004D17D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBB2CA7B1C699A31004D17D3 /* MetroTransitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroTransitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBB2CA7F1C699A31004D17D3 /* MetroTransitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroTransitUITests.swift; sourceTree = "<group>"; };
-		FBB2CA811C699A31004D17D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,13 +170,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBB2CA781C699A31004D17D3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -193,6 +180,8 @@
 				E7EC85033AFBC6BABFC1F613 /* Pods-MetroTransit.release.xcconfig */,
 				3A08C3B33D8A0FF06B752F49 /* Pods-MetroTransitTests.debug.xcconfig */,
 				781C07B3BA0E753280F2F80B /* Pods-MetroTransitTests.release.xcconfig */,
+				28F1359F0C2A68EB8629FD03 /* Pods-MetroTransitUITests.debug.xcconfig */,
+				717D58D3482AAE166D897ED7 /* Pods-MetroTransitUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -202,6 +191,7 @@
 			children = (
 				DEF8000B9FE520985A25FFE8 /* Pods_MetroTransit.framework */,
 				93D770E759B172C348A7B970 /* Pods_MetroTransitTests.framework */,
+				C9E5BCD8E777F4540BF0D91C /* Pods_MetroTransitUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -272,7 +262,7 @@
 				FB14BBB21C8FE4D2000D37C5 /* VehiclesView.swift */,
 				FB14BB821C8FC421000D37C5 /* VehiclesViewController.swift */,
 				FB936E031C908CC3008C7DDA /* VehiclesViewController+CoreLocation.swift */,
-				FB936E051C908CD2008C7DDA /* VehiclesViewController+MapKit */,
+				FB936E051C908CD2008C7DDA /* VehiclesViewController+MapKit.swift */,
 			);
 			path = Vehicle;
 			sourceTree = "<group>";
@@ -312,12 +302,33 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FB936E071C908FE7008C7DDA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB936E081C908FE7008C7DDA /* DirectionsViewControllerTests.swift */,
+				FB936E091C908FE7008C7DDA /* ProvidersViewControllerTests.swift */,
+				FB936E0A1C908FE7008C7DDA /* RoutesViewControllerTests.swift */,
+				FB936E0B1C908FE7008C7DDA /* StopsViewControllerTests.swift */,
+				FB936E0C1C908FE7008C7DDA /* UserAnnotationTests.swift */,
+				FB936E0D1C908FE7008C7DDA /* VehicleAnnotationTests.swift */,
+				FB936E0E1C908FE7008C7DDA /* VehiclesViewControllerTests.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB936E0F1C908FE7008C7DDA /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				FB936E101C908FE7008C7DDA /* routes.txt */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		FBB2CA501C699A31004D17D3 = {
 			isa = PBXGroup;
 			children = (
 				FBB2CA5B1C699A31004D17D3 /* MetroTransit */,
 				FBB2CA731C699A31004D17D3 /* MetroTransitTests */,
-				FBB2CA7E1C699A31004D17D3 /* MetroTransitUITests */,
 				FBB2CA5A1C699A31004D17D3 /* Products */,
 				2F38DB289A138684A5B56C6E /* Pods */,
 				5CE719056BE3F52EA855CA9B /* Frameworks */,
@@ -329,7 +340,6 @@
 			children = (
 				FBB2CA591C699A31004D17D3 /* MetroTransit.app */,
 				FBB2CA701C699A31004D17D3 /* MetroTransitTests.xctest */,
-				FBB2CA7B1C699A31004D17D3 /* MetroTransitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -352,26 +362,12 @@
 		FBB2CA731C699A31004D17D3 /* MetroTransitTests */ = {
 			isa = PBXGroup;
 			children = (
-				FB39EBCF1C699E5D009D8B95 /* DirectionsViewControllerTests.swift */,
+				FB936E071C908FE7008C7DDA /* Controller */,
 				FBB2CA761C699A31004D17D3 /* Info.plist */,
 				FB39EBD01C699E5D009D8B95 /* Model */,
-				FB39EBD61C699E5D009D8B95 /* ProvidersViewControllerTests.swift */,
-				FB39EBD71C699E5D009D8B95 /* RoutesViewControllerTests.swift */,
-				FB39EBD81C699E5D009D8B95 /* StopsViewControllerTests.swift */,
-				FB39EBD91C699E5D009D8B95 /* UserAnnotationTests.swift */,
-				FB39EBDA1C699E5D009D8B95 /* VehicleAnnotationTests.swift */,
-				FB39EBDB1C699E5D009D8B95 /* VehiclesViewControllerTests.swift */,
+				FB936E0F1C908FE7008C7DDA /* Stubs */,
 			);
 			path = MetroTransitTests;
-			sourceTree = "<group>";
-		};
-		FBB2CA7E1C699A31004D17D3 /* MetroTransitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FBB2CA7F1C699A31004D17D3 /* MetroTransitUITests.swift */,
-				FBB2CA811C699A31004D17D3 /* Info.plist */,
-			);
-			path = MetroTransitUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,24 +414,6 @@
 			productReference = FBB2CA701C699A31004D17D3 /* MetroTransitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FBB2CA7A1C699A31004D17D3 /* MetroTransitUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FBB2CA8A1C699A31004D17D3 /* Build configuration list for PBXNativeTarget "MetroTransitUITests" */;
-			buildPhases = (
-				FBB2CA771C699A31004D17D3 /* Sources */,
-				FBB2CA781C699A31004D17D3 /* Frameworks */,
-				FBB2CA791C699A31004D17D3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FBB2CA7D1C699A31004D17D3 /* PBXTargetDependency */,
-			);
-			name = MetroTransitUITests;
-			productName = MetroTransitUITests;
-			productReference = FBB2CA7B1C699A31004D17D3 /* MetroTransitUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -450,10 +428,6 @@
 						CreatedOnToolsVersion = 7.2.1;
 					};
 					FBB2CA6F1C699A31004D17D3 = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = FBB2CA581C699A31004D17D3;
-					};
-					FBB2CA7A1C699A31004D17D3 = {
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = FBB2CA581C699A31004D17D3;
 					};
@@ -474,7 +448,6 @@
 			targets = (
 				FBB2CA581C699A31004D17D3 /* MetroTransit */,
 				FBB2CA6F1C699A31004D17D3 /* MetroTransitTests */,
-				FBB2CA7A1C699A31004D17D3 /* MetroTransitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -494,13 +467,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FBB2CA791C699A31004D17D3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				FB936E181C908FE7008C7DDA /* routes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,7 +588,7 @@
 				FB14BBA31C8FE14A000D37C5 /* RoutesPresenter.swift in Sources */,
 				FB14BB851C8FC421000D37C5 /* RoutesViewController.swift in Sources */,
 				FB14BB931C8FC54C000D37C5 /* VehicleLocation+Methods.swift in Sources */,
-				FB936E061C908CD2008C7DDA /* VehiclesViewController+MapKit in Sources */,
+				FB936E061C908CD2008C7DDA /* VehiclesViewController+MapKit.swift in Sources */,
 				FB14BBB11C8FE4CC000D37C5 /* VehiclesPresenter.swift in Sources */,
 				FB14BB8B1C8FC46D000D37C5 /* Direction+Methods.swift in Sources */,
 				FB14BBA11C8FDF40000D37C5 /* ProvidersPresenter.swift in Sources */,
@@ -654,25 +621,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB39EBDE1C699E5D009D8B95 /* ProviderTests.swift in Sources */,
-				FB39EBE61C699E5D009D8B95 /* VehicleAnnotationTests.swift in Sources */,
-				FB39EBE21C699E5D009D8B95 /* ProvidersViewControllerTests.swift in Sources */,
-				FB39EBE71C699E5D009D8B95 /* VehiclesViewControllerTests.swift in Sources */,
+				FB936E161C908FE7008C7DDA /* VehicleAnnotationTests.swift in Sources */,
+				FB936E121C908FE7008C7DDA /* ProvidersViewControllerTests.swift in Sources */,
+				FB936E171C908FE7008C7DDA /* VehiclesViewControllerTests.swift in Sources */,
 				FB39EBDF1C699E5D009D8B95 /* RouteTests.swift in Sources */,
-				FB39EBDC1C699E5D009D8B95 /* DirectionsViewControllerTests.swift in Sources */,
-				FB39EBE41C699E5D009D8B95 /* StopsViewControllerTests.swift in Sources */,
-				FB39EBE51C699E5D009D8B95 /* UserAnnotationTests.swift in Sources */,
+				FB936E111C908FE7008C7DDA /* DirectionsViewControllerTests.swift in Sources */,
+				FB936E141C908FE7008C7DDA /* StopsViewControllerTests.swift in Sources */,
+				FB936E151C908FE7008C7DDA /* UserAnnotationTests.swift in Sources */,
 				FB39EBE11C699E5D009D8B95 /* VehicleLocationTests.swift in Sources */,
 				FB39EBE01C699E5D009D8B95 /* StopTests.swift in Sources */,
-				FB39EBE31C699E5D009D8B95 /* RoutesViewControllerTests.swift in Sources */,
+				FB936E131C908FE7008C7DDA /* RoutesViewControllerTests.swift in Sources */,
 				FB39EBDD1C699E5D009D8B95 /* DirectionTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FBB2CA771C699A31004D17D3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FBB2CA801C699A31004D17D3 /* MetroTransitUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,11 +642,6 @@
 			isa = PBXTargetDependency;
 			target = FBB2CA581C699A31004D17D3 /* MetroTransit */;
 			targetProxy = FBB2CA711C699A31004D17D3 /* PBXContainerItemProxy */;
-		};
-		FBB2CA7D1C699A31004D17D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FBB2CA581C699A31004D17D3 /* MetroTransit */;
-			targetProxy = FBB2CA7C1C699A31004D17D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -845,30 +799,6 @@
 			};
 			name = Release;
 		};
-		FBB2CA8B1C699A31004D17D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = MetroTransitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = MetroTransit;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		FBB2CA8C1C699A31004D17D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = MetroTransitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = MetroTransit;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -895,15 +825,6 @@
 			buildConfigurations = (
 				FBB2CA881C699A31004D17D3 /* Debug */,
 				FBB2CA891C699A31004D17D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FBB2CA8A1C699A31004D17D3 /* Build configuration list for PBXNativeTarget "MetroTransitUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FBB2CA8B1C699A31004D17D3 /* Debug */,
-				FBB2CA8C1C699A31004D17D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

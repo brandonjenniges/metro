@@ -13,7 +13,10 @@ class RoutesViewController: UIViewController, RoutesView {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter = RoutesPresenter(view: self)
-        self.presenter.getRoutes()
+        
+        if !AppDelegate.isTesting() { // Needed to make mock server work for testing
+            self.presenter.getRoutes()
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
