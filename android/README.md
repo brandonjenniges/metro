@@ -1,29 +1,26 @@
 # metro
 
-A demo Android application that utilizes the [NexTrip API](http://svc.metrotransit.org/). This app is used for demonstrating various Android development practices.
+A demo Android application that utilizes the [NexTrip API][1]. This app is used for demonstrating various Android development practices.
 
-Pre-requisites
---------------
+## Pre-requisites
 
 - Java 1.8
 - Android SDK v23
 - Gradle 2.8
 
-Getting Started
----------------
+## Getting Started
 
 This project uses the Gradle build system. To build this project, use the "gradlew build" command or use "Import Project" in Android Studio.
 
-Development Examples
---------------
+## Development Examples
 
-###MVP
+### MVP
 
 Model View Presenter (MVP) is a derivative of the Model View Controller (MVC) design pattern. MVP is great for Android development because it allows a break from often made mistakes of trying to fit everything into a more Model View pattern which results in the Activity/Fragment becoming too complex.
 
 MVP enforces a separation of complexity into various layers. This allows the app to have smaller objects, simpler tasks and become more testable.
 
-###Retrofit + RxJava
+### Retrofit + RxJava
 
 Network requests are made using a combination of [Retrofit 2][2] and [RxJava][3].
 
@@ -59,7 +56,8 @@ public void filterRoutes(final String s) {
 }
  ```
 
-###Web Server Response Stubbing
+### Web Server Response Stubbing
+
 Using [MockWebServer][4] to stub out network requests with controlled user defined responses from a local mock web server.
 
 ```java
@@ -71,20 +69,22 @@ server.enqueue(mockResponse);
 server.start();
 ```
 This allows for easy and controlled UI Testing using [Espresso][5]  
-###Code Coverage Reporting
 
-I used [JacocoEverywhere][1] to combine code coverage reports for unit and instrumentation tests.
+### Code Coverage Reporting
+
+I used [JacocoEverywhere][6] to combine code coverage reports for unit and instrumentation tests.
 
 ```gradle
 ./gradlew connectedCheck
 ```
 
-License
----------------
+## License
+
 This project is released under the MIT license. See LICENSE for details.
 
-[1]: https://github.com/paveldudka/JacocoEverywhere
+[1]: http://svc.metrotransit.org/
 [2]: https://github.com/square/retrofit
 [3]: https://github.com/ReactiveX/RxJava
 [4]: https://github.com/square/okhttp/tree/master/mockwebserver
 [5]: https://google.github.io/android-testing-support-library/docs/espresso/
+[6]: https://github.com/paveldudka/JacocoEverywhere
