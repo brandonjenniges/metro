@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
 import com.brandonjenniges.metro.R;
+import com.brandonjenniges.metro.View.RecyclerViewListDivider;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -50,6 +51,10 @@ public class RouteActivity extends AppCompatActivity implements RouteView {
         mRecyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
+
+        mRecyclerView.addItemDecoration(
+                new RecyclerViewListDivider(this, R.drawable.divider));
+
         mAdapter = new RouteListAdapter(presenter.getRoutes(), presenter);
         mRecyclerView.setAdapter(mAdapter);
     }
