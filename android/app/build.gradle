@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'jacoco-everywhere'
 apply plugin: 'me.tatarka.retrolambda'
 
 android {
@@ -39,10 +40,6 @@ android {
         }
     }
 
-    dataBinding {
-        enabled = true
-    }
-
     lintOptions {
         abortOnError false
     }
@@ -52,7 +49,6 @@ android {
     }
 
     packagingOptions {
-        // Multiple LICENSE.txt in hamcrest packages.
         exclude 'LICENSE.txt'
     }
 }
@@ -70,10 +66,10 @@ dependencies {
     compile 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:0.4.0'
     compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
 
-
     //OkHttp
     compile 'com.squareup.okhttp:okhttp:2.6.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+
     //Retrofit
     compile 'com.squareup.retrofit2:retrofit:2.0.0'
     compile 'com.squareup.retrofit2:converter-gson:2.0.0'
