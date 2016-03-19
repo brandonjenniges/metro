@@ -1,36 +1,31 @@
 # metro
 
-[![Build Status](https://travis-ci.org/steveholt55/metro.svg)](https://travis-ci.org/steveholt55/metro)
-
 A demo iOS application that utilizes the [NexTrip API][1]. This app is used for demonstrating various iOS development practices.
 
-Pre-requisites
---------------
+## Pre-requisites
 
 - iOS 8
 - Swift 2
 - Xcode 7
 
-Getting Started
----------------
+## Getting Started
 
 This project uses [CocoaPods][2]. To build this project, install cocoapods and use the
 "pod install" command. After pods install, open "MetroTransit.xcworkspace" in Xcode.
 
-Development Examples
---------------
+## Development Examples
 
-###MVP
+### MVP
 
 Model View Presenter (MVP) is a derivative of the Model View Controller (MVC) design pattern. MVP is great for iOS development because it allows a break from often made mistakes of trying to fit everything into the UIViewController.
 
 MVP enforces a separation of complexity into various layers. This allows the app to have smaller objects, simpler tasks and become more testable.
 
-###Alamofire
+### Alamofire
 
 Network requests made using the popular HTTP networking library [Alamofire][3].
 
-###Stubbing Network Requests
+### Stubbing Network Requests
 Using [OHHTTPStubs][4], network requests can easily be stubbed to provide controlled data for unit tests.
 
 ```swift
@@ -48,7 +43,7 @@ Route.getRoutes { (routes) -> Void in
     
 waitForExpectationsWithTimeout(5.0) { (error: NSError?) -> Void in
 ```
-###UI Testing with Stubbed Network Data
+### UI Testing with Stubbed Network Data
 
 Xcode's UI Tests can be a great tool to improve the quality of code you're writing. However, attempting to create UI tests for apps that rely on a web server can be very difficulty. 
 
@@ -56,7 +51,7 @@ The above method worked great for stubbing our data for the unit tests but it do
 
 I've struggled to find a great way to be able to achieve stubbed server responses while UI testing.  Most ways require stuffing your production app with test code and fake responses that are only used when you're running the UI Tests. Joe Masilotti's [article][5] offers the best idea that I've seen so far.  It requires very little production altering code to get network requesting stubbing up and running.
 
-####Example
+#### Example
 
 
 UI testing target:
@@ -86,11 +81,10 @@ func get(url: NSURL, parameters: [String: AnyObject]?, completion: HTTPResult) {
 	}
 }
 ```
-###Screenshots using Fastlane
+### Screenshots using Fastlane
 TODO
 
-License
----------------
+## License
 This project is released under the MIT license. See LICENSE for details.
 
 
@@ -99,3 +93,4 @@ This project is released under the MIT license. See LICENSE for details.
 [3]: https://github.com/Alamofire/Alamofire
 [4]: https://github.com/AliSoftware/OHHTTPStubs
 [5]: http://masilotti.com/testing-nsurlsession/
+[6]: https://travis-ci.org/steveholt55/metro
