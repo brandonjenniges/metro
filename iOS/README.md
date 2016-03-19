@@ -15,7 +15,7 @@ Getting Started
 ---------------
 
 This project uses [CocoaPods](http://cocoapods.org/). To build this project, install cocoapods and use the
-"pod install" command. After pods install, open "FootballCollegeTrivia.xcworkspace" in Xcode.
+"pod install" command. After pods install, open "MetroTransit.xcworkspace" in Xcode.
 
 License
 ---------------
