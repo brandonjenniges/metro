@@ -876,6 +876,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MetroTransit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -888,6 +889,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MetroTransit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandon.jenniges.MetroTransit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -933,6 +935,7 @@
 				C54310D21C9C94320080D65A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBB2CA541C699A31004D17D3 /* Build configuration list for PBXProject "MetroTransit" */ = {
 			isa = XCConfigurationList;
