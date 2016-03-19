@@ -4,15 +4,14 @@ Android and iOS applications that utilizes the [NexTrip API][1]. Each app is use
 
 Important ideas such as utilizing the MVP design pattern for better app structure and how to properly create UI and Unit tests while stubbing network data.
 
-Versions
---------------
+## Versions
 
 ####[iOS][2]
 
 ####[Android][3]
 
-License
----------------
+## License
+
 This project is released under the MIT license. See LICENSE for details.
 
 [1]: http://svc.metrotransit.org/
