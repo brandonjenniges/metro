@@ -6,9 +6,9 @@ import Foundation
 import CoreData
 
 extension Provider {
-
+    
     @NSManaged var text: String?
     @NSManaged var value: NSNumber?
     @NSManaged var routes: NSOrderedSet?
-
+    
 }

@@ -17,7 +17,7 @@ extension VehicleLocation {
             let vehicleLongitude = json["VehicleLongitude"] as? NSNumber,
             let direction = json["Direction"] as? NSNumber,
             let terminal = json["Terminal"] as? String
-        else { return nil }
+            else { return nil }
         
         self.vehicleLatitude = vehicleLatitude
         self.vehicleLongitude = vehicleLongitude
@@ -28,19 +28,18 @@ extension VehicleLocation {
     // MARK: - Metro API
     
     static func get(route: Route, complete:(vehicles:[VehicleLocation]) -> Void) {
-        Alamofire.request(.GET, "http://svc.metrotransit.org/NexTrip/VehicleLocations/\(route.routeNumber!)", parameters: ["format": "json"])
-            .responseJSON { response in
-                debugPrint(response)
-                var vehicles = [VehicleLocation]()
-                if let JSON = response.result.value  as? [[String : AnyObject]] {
-                    for item in JSON {
-                        if let vehicle = VehicleLocation(json: item) {
-                            vehicles.append(vehicle)
-                        }
+        let URL = NSURL(string: "http://svc.metrotransit.org/NexTrip/VehicleLocations/\(route.routeNumber!)")
+        HTTPClient().get(URL!, parameters: ["format": "json"]) { (json:AnyObject?, response:NSHTTPURLResponse?, error:NSError?) -> Void in
+            debugPrint(response)
+            var vehicles = [VehicleLocation]()
+            if let json = json as? [[String : AnyObject]] {
+                for item in json {
+                    if let vehicle = VehicleLocation(json: item) {
+                        vehicles.append(vehicle)
                     }
                 }
-                complete(vehicles: vehicles)
+            }
+            complete(vehicles: vehicles)
         }
     }
-    
 }

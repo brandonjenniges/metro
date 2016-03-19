@@ -19,7 +19,7 @@ extension Direction {
         guard let name = json["Text"] as? String,
             let stringValue = json["Value"] as? String,
             let value = Int(stringValue)
-        else { return nil }
+            else { return nil }
         
         self.name = name
         self.value = NSNumber(integer: value)
@@ -28,19 +28,18 @@ extension Direction {
     // MARK: - Metro API
     
     static func get(route: Route, complete:(directions:[Direction]) -> Void) {
-        Alamofire.request(.GET, "http://svc.metrotransit.org/NexTrip/Directions/\(route.routeNumber!)", parameters: ["format": "json"])
-            .responseJSON { response in
-                debugPrint(response)
-                
-                var directions = [Direction]()
-                if let JSON = response.result.value  as? [[String : AnyObject]] {
-                    for item in JSON {
-                        if let direction = Direction(json: item) {
-                            directions.append(direction)
-                        }
+        let URL = NSURL(string: "http://svc.metrotransit.org/NexTrip/Directions/\(route.routeNumber!)")
+        HTTPClient().get(URL!, parameters: ["format": "json"]) { (json:AnyObject?, response:NSHTTPURLResponse?, error:NSError?) -> Void in
+            
+            var directions = [Direction]()
+            if let json = json as? [[String : AnyObject]] {
+                for item in json {
+                    if let direction = Direction(json: item) {
+                        directions.append(direction)
                     }
                 }
-                complete(directions: directions)
+            }
+            complete(directions: directions)
         }
     }
     

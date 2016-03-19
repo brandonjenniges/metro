@@ -26,15 +26,16 @@ class RoutesViewControllerTests: XCTestCase {
        // XCTAssertNotNil(viewController, "Unable to create RoutesViewController")
     }
     
-    func testStub() {
+    func testFullRouteStub() {
         let readyExpectation = expectationWithDescription("request")
         
         stub(isMethodGET()) { _ in
-            let stubPath = OHPathForFile("routes.txt", self.dynamicType)
+            let stubPath = OHPathForFile("full_routes.txt", self.dynamicType)
             return fixture(stubPath!, status: 200, headers: ["Content-Type":"application/json"])
         }
         
         Route.getRoutes { (routes) -> Void in
+            XCTAssert(routes.count == 221)
             readyExpectation.fulfill()
         }
         
@@ -42,4 +43,24 @@ class RoutesViewControllerTests: XCTestCase {
             
         }
     }
+    
+    func testShortRouteStub() {
+        
+        let readyExpectation = expectationWithDescription("request")
+        
+        stub(isMethodGET()) { _ in
+            let stubPath = OHPathForFile("short_routes.txt", self.dynamicType)
+            return fixture(stubPath!, status: 200, headers: ["Content-Type":"application/json"])
+        }
+        
+        Route.getRoutes { (routes) -> Void in
+            XCTAssert(routes.count == 4)
+            readyExpectation.fulfill()
+        }
+        
+        waitForExpectationsWithTimeout(5.0) { (error: NSError?) -> Void in
+            
+        }
+    }
+    
 }

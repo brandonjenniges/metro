@@ -17,7 +17,7 @@ extension Stop {
         
         guard let value = json["Value"] as? String,
             let name = json["Text"] as? String
-        else { return nil }
+            else { return nil }
         
         self.value = value
         self.name = name
@@ -26,20 +26,19 @@ extension Stop {
     // MARK: - Metro API
     
     static func get(direction: Direction, complete:(stops:[Stop]) -> Void) {
-        Alamofire.request(.GET, "http://svc.metrotransit.org/NexTrip/Stops/\(direction.route!.routeNumber!)/\(direction.value!)", parameters: ["format": "json"])
-            .responseJSON { response in
-                debugPrint(response)
-                
-                var stops = [Stop]()
-                if let JSON = response.result.value  as? [[String : AnyObject]] {
-                    for item in JSON {
-                        if let stop = Stop(json: item) {
-                            stops.append(stop)
-                        }
+        let URL = NSURL(string: "http://svc.metrotransit.org/NexTrip/Stops/\(direction.route!.routeNumber!)/\(direction.value!)")
+        HTTPClient().get(URL!, parameters: ["format": "json"]) { (json:AnyObject?, response:NSHTTPURLResponse?, error:NSError?) -> Void in
+            debugPrint(response)
+            
+            var stops = [Stop]()
+            if let json = json as? [[String : AnyObject]] {
+                for item in json {
+                    if let stop = Stop(json: item) {
+                        stops.append(stop)
                     }
                 }
-                complete(stops: stops)
+            }
+            complete(stops: stops)
         }
     }
-    
 }

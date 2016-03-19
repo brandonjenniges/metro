@@ -10,6 +10,9 @@ class RoutesViewController: UIViewController, RoutesView {
     @IBOutlet weak var tableview: UITableView!
     var presenter: RoutesPresenter!
     
+    //test
+    let httpClient = HTTPClient()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter = RoutesPresenter(view: self)

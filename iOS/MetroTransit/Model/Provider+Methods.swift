@@ -16,7 +16,7 @@ extension Provider {
         guard let name = json["Text"] as? String,
             let stringValue = json["Value"] as? String,
             let value = Int(stringValue)
-        else { return nil }
+            else { return nil }
         
         self.text = name
         self.value = NSNumber(integer: value)
@@ -25,20 +25,18 @@ extension Provider {
     // MARK: - Metro API
     
     static func get(complete complete:(providers:[Provider]) -> Void) {
-        Alamofire.request(.GET, "http://svc.metrotransit.org/NexTrip/Providers", parameters: ["format": "json"])
-            .responseJSON { response in
-                debugPrint(response)
-                
-                var providers = [Provider]()
-                if let JSON = response.result.value  as? [[String : AnyObject]] {
-                    for item in JSON {
-                        if let provider = Provider(json: item) {
-                            providers.append(provider)
-                        }
+        let URL = NSURL(string: "http://svc.metrotransit.org/NexTrip/Providers")
+        HTTPClient().get(URL!, parameters: ["format": "json"]) { (json:AnyObject?, response:NSHTTPURLResponse?, error:NSError?) -> Void in
+            
+            var providers = [Provider]()
+            if let json = json  as? [[String : AnyObject]] {
+                for item in json {
+                    if let provider = Provider(json: item) {
+                        providers.append(provider)
                     }
                 }
-                complete(providers: providers)
+            }
+            complete(providers: providers)
         }
     }
-    
 }

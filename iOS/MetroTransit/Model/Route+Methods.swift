@@ -20,7 +20,7 @@ extension Route {
             let providerIdString = json["ProviderID"] as? String,
             let providerIdInt = Int(providerIdString),
             let routeName = json["Description"] as? String
-        else { return nil }
+            else { return nil }
         
         self.routeNumber = NSNumber(integer: routeNumberInt)
         self.providerId = NSNumber(integer: providerIdInt)
@@ -30,19 +30,17 @@ extension Route {
     // MARK: - Metro API
     
     static func getRoutes(complete complete:(routes:[Route]) -> Void) {
-        Alamofire.request(.GET, "http://svc.metrotransit.org/NexTrip/Routes", parameters: ["format": "json"])
-            .responseJSON { response in
-                debugPrint(response)
-                
-                var routes = [Route]()
-                if let JSON = response.result.value  as? [[String : AnyObject]] {
-                    for item in JSON {
-                        if let route = Route(json: item) {
-                            routes.append(route)
-                        }
+        let URL = NSURL(string: "http://svc.metrotransit.org/NexTrip/Routes")
+        HTTPClient().get(URL!, parameters: ["format":"json"]) { (json:AnyObject?, response:NSHTTPURLResponse?, error:NSError?) -> Void in
+            var routes = [Route]()
+            if let json = json as? [[String : AnyObject]] {
+                for item in json {
+                    if let route = Route(json: item) {
+                        routes.append(route)
                     }
                 }
-                complete(routes: routes)
+            }
+            complete(routes: routes)
         }
     }
     

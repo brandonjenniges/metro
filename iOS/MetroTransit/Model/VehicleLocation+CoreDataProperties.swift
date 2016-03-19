@@ -6,7 +6,7 @@ import Foundation
 import CoreData
 
 extension VehicleLocation {
-
+    
     @NSManaged var bearing: NSNumber?
     @NSManaged var blockNumber: NSNumber?
     @NSManaged var direction: NSNumber?
@@ -17,5 +17,5 @@ extension VehicleLocation {
     @NSManaged var terminal: String?
     @NSManaged var vehicleLatitude: NSNumber?
     @NSManaged var vehicleLongitude: NSNumber?
-
+    
 }
