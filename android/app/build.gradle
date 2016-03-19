@@ -1,8 +1,14 @@
 apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
     defaultConfig {
         applicationId "com.brandonjenniges.metro"
@@ -33,6 +39,10 @@ android {
         }
     }
 
+    dataBinding {
+        enabled = true
+    }
+
     lintOptions {
         abortOnError false
     }
@@ -56,6 +66,11 @@ dependencies {
     //RxAndroid
     compile 'io.reactivex:rxjava:1.1.0'
     compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:0.4.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:0.4.0'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+
+
     //OkHttp
     compile 'com.squareup.okhttp:okhttp:2.6.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
