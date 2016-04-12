@@ -17,15 +17,10 @@ public class RouteListAdapter extends RecyclerView.Adapter<RouteViewHolder> {
         this.presenter = presenter;
     }
 
-    public void setRoutes(Route[] routes) {
-        this.routes = routes;
-    }
-
     @Override
     public RouteViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.route_list_row, null);
-        RouteViewHolder viewHolder = new RouteViewHolder(view, presenter);
-        return viewHolder;
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.route_list_row, viewGroup, false);
+        return new RouteViewHolder(view, presenter);
     }
 
     @Override
@@ -37,5 +32,14 @@ public class RouteListAdapter extends RecyclerView.Adapter<RouteViewHolder> {
     @Override
     public int getItemCount() {
         return routes.length;
+    }
+
+    public Route[] getRoutes() {
+        return routes;
+    }
+
+    public void setRoutes(Route[] routes) {
+        this.routes = routes;
+        notifyDataSetChanged();
     }
 }

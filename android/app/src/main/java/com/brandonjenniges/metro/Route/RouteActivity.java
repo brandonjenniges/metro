@@ -2,7 +2,6 @@ package com.brandonjenniges.metro.Route;
 
 import android.app.SearchManager;
 import android.os.Bundle;
-import android.support.annotation.UiThread;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.widget.Toast;
 
+import com.brandonjenniges.metro.Model.Route;
 import com.brandonjenniges.metro.R;
 import com.brandonjenniges.metro.View.RecyclerViewListDivider;
 import com.jakewharton.rxbinding.support.v7.widget.RxSearchView;
@@ -22,8 +22,8 @@ import rx.android.schedulers.AndroidSchedulers;
 
 public class RouteActivity extends AppCompatActivity implements RouteView {
 
-    @Bind(R.id.routes_rv)
-    RecyclerView mRecyclerView;
+    @Bind(R.id.routes_rv) RecyclerView mRecyclerView;
+    @Bind(R.id.toolbar) Toolbar toolbar;
 
     private RoutePresenter presenter;
     private RouteListAdapter mAdapter;
@@ -35,22 +35,30 @@ public class RouteActivity extends AppCompatActivity implements RouteView {
         ButterKnife.bind(this);
 
         presenter = new RoutePresenter(this);
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         setupRecyclerView();
     }
 
     @Override
-    public void selectedRouteRow(int row) {
-        Toast.makeText(getApplicationContext(), presenter.getDisplayRoutes()[row].getName(), Toast.LENGTH_SHORT).show();
+    protected void onStart() {
+        super.onStart();
+        presenter.onStart();
     }
 
-    @Override @UiThread
-    public void reload() {
-        mAdapter.setRoutes(presenter.getDisplayRoutes());
-        mAdapter.notifyDataSetChanged();
+    @Override
+    protected void onPause() {
+        super.onPause();
+        presenter.onPause();
+    }
+
+    @Override
+    public void selectedRouteRow(int row) {
+        Toast.makeText(getApplicationContext(), mAdapter.getRoutes()[row].getName(), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void setRoutes(Route[] routes) {
+        mAdapter.setRoutes(routes);
     }
 
     private void setupRecyclerView() {
@@ -61,7 +69,7 @@ public class RouteActivity extends AppCompatActivity implements RouteView {
         mRecyclerView.addItemDecoration(
                 new RecyclerViewListDivider(this, R.drawable.divider));
 
-        mAdapter = new RouteListAdapter(presenter.getDisplayRoutes(), presenter);
+        mAdapter = new RouteListAdapter(new Route[]{}, presenter);
         mRecyclerView.setAdapter(mAdapter);
     }
 
@@ -76,7 +84,6 @@ public class RouteActivity extends AppCompatActivity implements RouteView {
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.action_search));
         // Text change listener
         RxSearchView.queryTextChanges(searchView)
-                //.debounce(500, TimeUnit.MILLISECONDS)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(charSequence -> {
                     presenter.filterRoutes(charSequence.toString());
