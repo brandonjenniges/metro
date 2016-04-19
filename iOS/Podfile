@@ -9,6 +9,7 @@ end
 
 target 'MetroTransit' do
     pod_afnetworking
+    pod 'ReactiveCocoa', '~> 4.1'
     pod 'OHHTTPStubs'
     pod 'OHHTTPStubs/Swift'
 end

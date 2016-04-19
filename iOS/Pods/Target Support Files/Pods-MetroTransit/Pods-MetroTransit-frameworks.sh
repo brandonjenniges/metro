@@ -86,8 +86,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-MetroTransit/Alamofire.framework"
   install_framework "Pods-MetroTransit/OHHTTPStubs.framework"
+  install_framework "Pods-MetroTransit/ReactiveCocoa.framework"
+  install_framework "Pods-MetroTransit/Result.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-MetroTransit/Alamofire.framework"
   install_framework "Pods-MetroTransit/OHHTTPStubs.framework"
+  install_framework "Pods-MetroTransit/ReactiveCocoa.framework"
+  install_framework "Pods-MetroTransit/Result.framework"
 fi

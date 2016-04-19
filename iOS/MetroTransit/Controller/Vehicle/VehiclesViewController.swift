@@ -6,7 +6,7 @@ import UIKit
 import MapKit
 import Alamofire
 
-class VehiclesViewController: UIViewController, VehiclesView {
+class VehiclesViewController: UIViewController, VehiclesViewModelListener {
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -15,12 +15,12 @@ class VehiclesViewController: UIViewController, VehiclesView {
     let locationManager = CLLocationManager()
     var userPin: UserAnnotation?
 
-    var presenter: VehiclesPresenter!
+    var viewModel: VehiclesViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = presenter.route.name
-        presenter.showVehicles()
+        title = viewModel.route.name
+        viewModel.showVehicles()
         setupCoreLocation()
     }
     

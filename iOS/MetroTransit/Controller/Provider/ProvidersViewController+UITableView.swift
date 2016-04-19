@@ -9,11 +9,11 @@ extension ProvidersViewController: UITableViewDataSource {
     // MARK: - UITableview datasource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.presenter.providers.count
+        return self.viewModel.providers.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let provider = self.presenter.providers[indexPath.row]
+        let provider = self.viewModel.providers[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         cell.textLabel?.text = provider.text!
         return cell

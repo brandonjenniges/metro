@@ -5,16 +5,17 @@
 import UIKit
 import Alamofire
 
-class DirectionsViewController: UIViewController, DirectionsView {
+class DirectionsViewController: UIViewController, DirectionsViewModelListener {
     static let segue = "showDirections"
     
     @IBOutlet weak var tableview: UITableView!
-    var presenter: DirectionsPresenter!
+    var viewModel: DirectionsViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = self.presenter.route.name!
-        self.presenter.getDirections()
+        
+        title = self.viewModel.route.name!
+        self.viewModel.getDirections()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -26,8 +27,8 @@ class DirectionsViewController: UIViewController, DirectionsView {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let viewController = segue.destinationViewController as! StopsViewController
-        let direction = self.presenter.route.directions![tableview.indexPathForSelectedRow!.row] as! Direction
-        viewController.presenter = StopsPresenter(view: viewController, direction: direction)
+        let direction = self.viewModel.route.directions![tableview.indexPathForSelectedRow!.row] as! Direction
+        viewController.viewModel = StopsViewModel(listener: viewController, direction: direction)
     }
     
     // MARK: - Directions view

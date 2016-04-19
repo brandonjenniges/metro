@@ -5,15 +5,15 @@
 import UIKit
 import Alamofire
 
-class StopsViewController: UIViewController, StopsView {
+class StopsViewController: UIViewController, StopsViewModelListener {
     
     @IBOutlet weak var tableview: UITableView!
-    var presenter: StopsPresenter!
+    var viewModel: StopsViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = self.presenter.direction.name
-        self.presenter.getStops()
+        title = self.viewModel.direction.name
+        self.viewModel.getStops()
     }
     
     override func viewWillAppear(animated: Bool) {

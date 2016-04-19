@@ -5,15 +5,15 @@
 import UIKit
 import Alamofire
 
-class ProvidersViewController: UIViewController, ProvidersView {
+class ProvidersViewController: UIViewController, ProvidersViewModelListener {
 
     @IBOutlet weak var tableview: UITableView!
-    var presenter: ProvidersPresenter!
+    var viewModel: ProvidersViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter = ProvidersPresenter(view: self)
-        self.presenter.getProviders()
+        self.viewModel = ProvidersViewModel(listener: self)
+        self.viewModel.getProviders()
     }
     
     // MARK: - Providers view

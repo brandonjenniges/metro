@@ -9,11 +9,11 @@ extension RoutesViewController: UITableViewDataSource, UITableViewDelegate {
     // MARK : - UITableView datasource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.presenter.displayRoutes.count
+        return self.viewModel.displayRoutes.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let route = self.presenter.displayRoutes[indexPath.row]
+        let route = self.viewModel.displayRoutes[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         cell.textLabel?.text = route.name!
         return cell

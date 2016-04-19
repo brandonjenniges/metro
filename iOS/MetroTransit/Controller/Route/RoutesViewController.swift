@@ -5,20 +5,20 @@
 import UIKit
 import Alamofire
 
-class RoutesViewController: UIViewController, RoutesView {
+class RoutesViewController: UIViewController, RoutesViewModelListener {
     
     @IBOutlet weak var tableview: UITableView!
-    var presenter: RoutesPresenter!
+    var viewModel: RoutesViewModel!
     
     //test
     let httpClient = HTTPClient()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter = RoutesPresenter(view: self)
+        self.viewModel = RoutesViewModel(listener: self)
         
         if !AppDelegate.isTesting() { // Needed to make mock server work for testing
-            self.presenter.getRoutes()
+            self.viewModel.getRoutes()
         }
     }
     
@@ -32,12 +32,12 @@ class RoutesViewController: UIViewController, RoutesView {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == DirectionsViewController.segue {
             let viewController = segue.destinationViewController as! DirectionsViewController
-            viewController.presenter = DirectionsPresenter(view: viewController, route: self.presenter.displayRoutes[tableview.indexPathForSelectedRow!.row])
+            viewController.viewModel = DirectionsViewModel(listener: viewController, route: self.viewModel.displayRoutes[tableview.indexPathForSelectedRow!.row])
         } else if segue.identifier == VehiclesViewController.segue {
             let viewController = segue.destinationViewController as! VehiclesViewController
-            let route = self.presenter.displayRoutes[tableview.indexPathForSelectedRow!.row]
-            let vehicles = self.presenter.vehicles
-            viewController.presenter = VehiclesPresenter(view: viewController, route: route, vehicles: vehicles)
+            let route = self.viewModel.displayRoutes[tableview.indexPathForSelectedRow!.row]
+            let vehicles = self.viewModel.vehicles
+            viewController.viewModel = VehiclesViewModel(listener: viewController, route: route, vehicles: vehicles)
         }
     }
     
@@ -48,7 +48,7 @@ class RoutesViewController: UIViewController, RoutesView {
     // MARK : - Screen
     
     func showScreenPicker() {
-        let route = self.presenter.displayRoutes[tableview.indexPathForSelectedRow!.row]
+        let route = self.viewModel.displayRoutes[tableview.indexPathForSelectedRow!.row]
         let controller = UIAlertController(title: route.name, message: nil, preferredStyle: .ActionSheet)
         
         let directionsAction = UIAlertAction(title: "Directions", style: .Default, handler: { (action: UIAlertAction) -> Void in
@@ -57,7 +57,7 @@ class RoutesViewController: UIViewController, RoutesView {
         
         let vehiclesAction = UIAlertAction(title: "Vehicles", style: .Default, handler: { (action: UIAlertAction) -> Void in
             VehicleLocation.get(route, complete: { (vehicles) -> Void in
-                self.presenter.vehicles = vehicles
+                self.viewModel.vehicles = vehicles
                 if (vehicles.count > 0) {
                     self.performSegueWithIdentifier(VehiclesViewController.segue, sender: self)
                 } else {
