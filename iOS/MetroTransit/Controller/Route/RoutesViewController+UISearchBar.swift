@@ -7,7 +7,7 @@ import UIKit
 extension RoutesViewController: UISearchBarDelegate {
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        self.viewModel.displayRoutes = Route.getRoutesContainingName(searchText, routes: self.viewModel.routes)
-        self.tableview.reloadData()
+        self.viewModel.routes.updateRoutes(Routes.getRoutesContainingName(searchText, routes: self.viewModel.objects.value))
+        self.viewModel.listener.reload()
     }
 }

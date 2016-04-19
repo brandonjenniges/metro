@@ -17,6 +17,8 @@ class RoutesViewController: UIViewController, RoutesViewModelListener {
         super.viewDidLoad()
         self.viewModel = RoutesViewModel(listener: self)
         
+        tableview.dataSource = viewModel.routes
+        
         if !AppDelegate.isTesting() { // Needed to make mock server work for testing
             self.viewModel.getRoutes()
         }
@@ -32,10 +34,10 @@ class RoutesViewController: UIViewController, RoutesViewModelListener {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == DirectionsViewController.segue {
             let viewController = segue.destinationViewController as! DirectionsViewController
-            viewController.viewModel = DirectionsViewModel(listener: viewController, route: self.viewModel.displayRoutes[tableview.indexPathForSelectedRow!.row])
+            viewController.viewModel = DirectionsViewModel(listener: viewController, route: self.viewModel.routes.routes[tableview.indexPathForSelectedRow!.row])
         } else if segue.identifier == VehiclesViewController.segue {
             let viewController = segue.destinationViewController as! VehiclesViewController
-            let route = self.viewModel.displayRoutes[tableview.indexPathForSelectedRow!.row]
+            let route = self.viewModel.routes.routes[tableview.indexPathForSelectedRow!.row]
             let vehicles = self.viewModel.vehicles
             viewController.viewModel = VehiclesViewModel(listener: viewController, route: route, vehicles: vehicles)
         }
@@ -48,7 +50,7 @@ class RoutesViewController: UIViewController, RoutesViewModelListener {
     // MARK : - Screen
     
     func showScreenPicker() {
-        let route = self.viewModel.displayRoutes[tableview.indexPathForSelectedRow!.row]
+        let route = self.viewModel.routes.routes[tableview.indexPathForSelectedRow!.row]
         let controller = UIAlertController(title: route.name, message: nil, preferredStyle: .ActionSheet)
         
         let directionsAction = UIAlertAction(title: "Directions", style: .Default, handler: { (action: UIAlertAction) -> Void in

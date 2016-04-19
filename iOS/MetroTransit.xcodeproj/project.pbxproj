@@ -68,6 +68,7 @@
 		FBB873E31CC5CDB400039353 /* VehicleLocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB873D41CC5CDB400039353 /* VehicleLocation+CoreDataProperties.swift */; };
 		FBB873E41CC5CDB400039353 /* VehicleLocation+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB873D51CC5CDB400039353 /* VehicleLocation+Methods.swift */; };
 		FBB873E51CC5CDB400039353 /* VehicleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB873D61CC5CDB400039353 /* VehicleLocation.swift */; };
+		FBB873E71CC5CE7700039353 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB873E61CC5CE7700039353 /* Routes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +163,7 @@
 		FBB873D41CC5CDB400039353 /* VehicleLocation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VehicleLocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FBB873D51CC5CDB400039353 /* VehicleLocation+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VehicleLocation+Methods.swift"; sourceTree = "<group>"; };
 		FBB873D61CC5CDB400039353 /* VehicleLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleLocation.swift; sourceTree = "<group>"; };
+		FBB873E61CC5CE7700039353 /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +425,7 @@
 				FBB873CC1CC5CDB400039353 /* Route+CoreDataProperties.swift */,
 				FBB873CD1CC5CDB400039353 /* Route+Methods.swift */,
 				FBB873CE1CC5CDB400039353 /* Route.swift */,
+				FBB873E61CC5CE7700039353 /* Routes.swift */,
 			);
 			path = Route;
 			sourceTree = "<group>";
@@ -706,6 +709,7 @@
 				FB14BB851C8FC421000D37C5 /* RoutesViewController.swift in Sources */,
 				FB936E061C908CD2008C7DDA /* VehiclesViewController+MapKit.swift in Sources */,
 				FB14BBB11C8FE4CC000D37C5 /* VehiclesViewModel.swift in Sources */,
+				FBB873E71CC5CE7700039353 /* Routes.swift in Sources */,
 				FB14BB871C8FC421000D37C5 /* UserAnnotation.swift in Sources */,
 				FB14BB971C8FC68F000D37C5 /* DirectionsViewModel.swift in Sources */,
 				FBB873E51CC5CDB400039353 /* VehicleLocation.swift in Sources */,

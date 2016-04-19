@@ -27,32 +27,4 @@ extension Route {
         self.name = routeName
     }
     
-    // MARK: - Metro API
-    
-    static func getRoutes(complete complete:(routes:[Route]) -> Void) {
-        let URL = NSURL(string: "http://svc.metrotransit.org/NexTrip/Routes")
-        HTTPClient().get(URL!, parameters: ["format":"json"]) { (json:AnyObject?, response:NSHTTPURLResponse?, error:NSError?) -> Void in
-            var routes = [Route]()
-            if let json = json as? [[String : AnyObject]] {
-                for item in json {
-                    if let route = Route(json: item) {
-                        routes.append(route)
-                    }
-                }
-            }
-            complete(routes: routes)
-        }
-    }
-    
-    static func getRoutesContainingName(string: String, routes:[Route]) -> [Route] {
-        let whitespaceSet = NSCharacterSet.whitespaceCharacterSet()
-        if string.stringByTrimmingCharactersInSet(whitespaceSet) == "" {
-            return routes
-        }
-        
-        let lowercaseString = string.lowercaseString
-        return routes.filter { (route : Route) -> Bool in
-            return route.name!.lowercaseString.rangeOfString(lowercaseString) != nil
-        }
-    }
 }

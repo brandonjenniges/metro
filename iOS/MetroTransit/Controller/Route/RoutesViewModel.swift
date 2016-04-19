@@ -3,13 +3,15 @@
 //
 
 import Foundation
+import ReactiveCocoa
 
 class RoutesViewModel {
     
     unowned let listener: RoutesViewModelListener
     
-    var routes = [Route]()
-    var displayRoutes = [Route]()
+    let routes = Routes()
+    var objects = MutableProperty<[Route]>([Route]())
+    
     var vehicles = [VehicleLocation]()
     
     required init(listener: RoutesViewModelListener) {
@@ -17,9 +19,9 @@ class RoutesViewModel {
     }
     
     func getRoutes() {
-        Route.getRoutes(complete: { (routes) -> Void in
-            self.routes = routes
-            self.displayRoutes = routes
+        Routes.get(complete: { (routes) -> Void in
+            self.routes.updateRoutes(routes)
+            self.objects.value = routes
             self.listener.reload()
         })
     }
